@@ -1,0 +1,315 @@
+{
+  "title": "公益站导航",
+  "description": "收录的站都可以编程、龙虾、酒馆，使用请保护个人隐私和数据安全，本站不对任何收录的中转站负责",
+  "updated": "2026-06-04",
+  "keywords": [
+    "ai api",
+    "AI API",
+    "公益中转站",
+    "公益 API",
+    "AI API 中转站",
+    "GPT",
+    "GPT API",
+    "Claude",
+    "Claude API",
+    "Codex",
+    "Codex 编程",
+    "DeepSeek",
+    "Gemini",
+    "GLM",
+    "MiniMax",
+    "New API",
+    "ChatGPT API",
+    "免费 AI API",
+    "AI API 导航",
+    "编程",
+    "龙虾",
+    "酒馆"
+  ],
+  "sites": [
+    {
+      "index": 1,
+      "name": "Guys",
+      "url": "https://www.guyscode.com/sign-up?aff=YAmP",
+      "domain": "guyscode.com",
+      "tags": [
+        "签到",
+        "生图",
+        "稳定",
+        "Claude",
+        "Pro",
+        "限时活动"
+      ],
+      "note": "【0531新增】优质付费站，满血pro号和官方Claude，链接注册有10刀体验额度，6.1-6.3活动限时0.1倍率，订阅可享受1:10+充值比"
+    },
+    {
+      "index": 2,
+      "name": "云舟",
+      "url": "https://cli.999554.xyz/register?aff=9LWs",
+      "domain": "cli.999554.xyz",
+      "tags": [
+        "DeepSeek",
+        "免费"
+      ],
+      "note": "【0531新增】DeepSeek v4 flash免费，在deepseek分组中"
+    },
+    {
+      "index": 3,
+      "name": "词元枢阁",
+      "url": "https://api.aisz.mom/sign-up?aff=rd8u",
+      "domain": "api.aisz.mom",
+      "tags": [
+        "签到",
+        "Chat",
+        "低倍率"
+      ],
+      "note": "【0530新增】免费活动已经结束，现在注册1刀，0.02倍率；有长期免费的chat分组，只能聊天"
+    },
+    {
+      "index": 4,
+      "name": "NianHua",
+      "url": "https://newapi.makelove.cloud/register?aff=j4JY",
+      "domain": "newapi.makelove.cloud",
+      "tags": [
+        "签到",
+        "生图",
+        "注册赠送"
+      ],
+      "note": "【0530新增】注册送15刀，0.6倍率，每天签到3-5刀"
+    },
+    {
+      "index": 5,
+      "name": "u3u",
+      "url": "https://585016d3.u3u.dev/register?aff=UBLUC8FKUSP3",
+      "domain": "585016d3.u3u.dev",
+      "tags": [
+        "订阅",
+        "需加群",
+        "验证码难"
+      ],
+      "note": "【0528新增】送7天30刀订阅，加群1098170550找群主激活，验证码比较难收"
+    },
+    {
+      "index": 6,
+      "name": "moyuu",
+      "url": "https://moyuu.cc/register?aff=tdMw",
+      "domain": "moyuu.cc",
+      "tags": [
+        "签到",
+        "生图",
+        "公益",
+        "低倍率"
+      ],
+      "note": "【0528新增】公益站注册6刀，有签到，0.06倍率"
+    },
+    {
+      "index": 7,
+      "name": "维云",
+      "url": "https://vsllm.com/register?aff=BDCM",
+      "domain": "vsllm.com",
+      "tags": [
+        "签到",
+        "生图",
+        "GitHub",
+        "抽奖"
+      ],
+      "note": "【0528新增】GitHub登录，每天签到送5小时20刀额度，还有额外3次抽奖机会"
+    },
+    {
+      "index": 9,
+      "name": "小白",
+      "url": "https://www.aixiaobai.pro/register?aff=EPZBW3JWS9S2",
+      "domain": "aixiaobai.pro",
+      "tags": [
+        "生图",
+        "邀请码",
+        "需加群"
+      ],
+      "note": "【0527更新】注册填LLNB多10刀，注册后进群找群主要20刀日卡"
+    },
+    {
+      "index": 10,
+      "name": "aiapi",
+      "url": "https://aiapi1.cc.cd/register?aff=MbkE",
+      "domain": "aiapi1.cc.cd",
+      "tags": [
+        "生图",
+        "公益",
+        "GPT",
+        "不稳定"
+      ],
+      "note": "【0527新增】纯公益站200刀，极低倍率，GPT上游是hl，不稳定"
+    },
+    {
+      "index": 11,
+      "name": "FreeModel",
+      "url": "https://freemodel.dev/invite/FRE-c3a6e8fb",
+      "domain": "freemodel.dev",
+      "tags": [
+        "稳定",
+        "订阅",
+        "Pro",
+        "需手机"
+      ],
+      "note": "注册送一个月Pro订阅（每周70刀），模型可能参水，需要绑定手机"
+    },
+    {
+      "index": 13,
+      "name": "猫羽霖",
+      "url": "https://huashang.dpdns.org/sign-up?aff=BJ3x",
+      "domain": "huashang.dpdns.org",
+      "tags": [
+        "签到",
+        "公益",
+        "DeepSeek",
+        "可能无法注册"
+      ],
+      "note": "纯公益站，注册送11刀，有几乎免费的DeepSeek全系列，可能无法注册"
+    },
+    {
+      "index": 15,
+      "name": "aiok",
+      "url": "https://aiok.club/sign-up?aff=zHA5",
+      "domain": "aiok.club",
+      "tags": [
+        "注册赠送",
+        "不稳定"
+      ],
+      "note": "注册250刀，不稳定"
+    },
+    {
+      "index": 18,
+      "name": "DGB",
+      "url": "https://freeapi.dgbmc.top/register?aff=yx7X",
+      "domain": "freeapi.dgbmc.top",
+      "tags": [
+        "签到",
+        "生图",
+        "GLM",
+        "注册赠送"
+      ],
+      "note": "注册80刀，签到40刀，目前只有image2、GLM5.1、gork4.2"
+    },
+    {
+      "index": 19,
+      "name": "幻城",
+      "url": "https://api.iamhc.cn/register?aff=Xn1u",
+      "domain": "api.iamhc.cn",
+      "tags": [
+        "国模",
+        "无限额度"
+      ],
+      "note": "无限额度，有很多国模"
+    },
+    {
+      "index": 20,
+      "name": "NexaHub",
+      "url": "https://ai.nexahub.one/register?aff=67AMG2HPNZ2W",
+      "domain": "ai.nexahub.one",
+      "tags": [
+        "稳定",
+        "订阅",
+        "注册赠送"
+      ],
+      "note": "最近注册送一周订阅"
+    },
+    {
+      "index": 21,
+      "name": "帮帮",
+      "url": "https://helpcoder.cc/register?aff=JTKb",
+      "domain": "helpcoder.cc",
+      "tags": [
+        "签到",
+        "注册赠送",
+        "暂时不可用"
+      ],
+      "note": "注册100刀，签到60刀，暂时不可用"
+    },
+    {
+      "index": 23,
+      "name": "52",
+      "url": "https://52mx.net/register?aff=rcDj",
+      "domain": "52mx.net",
+      "tags": [
+        "签到",
+        "稳定",
+        "GPT",
+        "注册赠送"
+      ],
+      "note": "登录送20刀，正常倍率有缓存，周末可以用GPT5.5，维护速度很快"
+    },
+    {
+      "index": 24,
+      "name": "北极星",
+      "url": "https://api.bybing.cc/register?aff=y1KJ",
+      "domain": "api.bybing.cc",
+      "tags": [
+        "签到",
+        "生图",
+        "低倍率"
+      ],
+      "note": "送7元，倍率0.06，相当于110刀"
+    },
+    {
+      "index": 25,
+      "name": "agentrouter",
+      "url": "https://agentrouter.org/register?aff=xXXj",
+      "domain": "agentrouter.org",
+      "tags": [
+        "GitHub",
+        "注册赠送",
+        "可能无法注册"
+      ],
+      "note": "GitHub登录，送100刀，可能已无法注册"
+    },
+    {
+      "index": 26,
+      "name": "UU",
+      "url": "https://api.uu6.top/register?aff=p5r3",
+      "domain": "api.uu6.top",
+      "tags": [
+        "签到",
+        "稳定",
+        "Claude",
+        "注册赠送"
+      ],
+      "note": "注册10刀，有Claude"
+    },
+    {
+      "index": 27,
+      "name": "code-relay",
+      "url": "https://api.code-relay.com/register?aff=IT8g",
+      "domain": "api.code-relay.com",
+      "tags": [
+        "Claude",
+        "注册赠送"
+      ],
+      "note": "登录送50刀，有Claude"
+    },
+    {
+      "index": 28,
+      "name": "小白code",
+      "url": "https://token.dialoguedui.com/register?aff=Y7KGR7NHJJVP",
+      "domain": "token.dialoguedui.com",
+      "tags": [
+        "签到",
+        "生图",
+        "活动取消"
+      ],
+      "note": "【0527】注册活动暂时已经取消"
+    },
+    {
+      "index": 29,
+      "name": "super",
+      "url": "https://superapi.buzz/register?aff=E3S9",
+      "domain": "superapi.buzz",
+      "tags": [
+        "签到",
+        "Plus",
+        "超低倍率",
+        "限时活动"
+      ],
+      "note": "登录送4刀，但是倍率是0.001；限时随机开放，正常plus倍率0.1，约等于4000刀/40刀"
+    }
+  ]
+}

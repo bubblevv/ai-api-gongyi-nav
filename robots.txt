@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bubblevv.github.io/ai-api-gongyi-nav/sitemap.xml

@@ -1,0 +1,7 @@
+ai-api-sites-table.xlsx
+output/
+.playwright-cli/
+__pycache__/
+*.pyc
+.env
+.env.*
