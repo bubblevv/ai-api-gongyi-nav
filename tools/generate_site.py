@@ -385,9 +385,11 @@ def write_html(title: str, subtitle: str, updated: str, sites: list[Site]) -> st
       line-height: 1.75;
     }}
     .cover {{
+      display: block;
       width: 100%;
+      height: auto;
       aspect-ratio: 1200 / 630;
-      object-fit: cover;
+      object-fit: contain;
       border: 1px solid var(--line);
       border-radius: 8px;
       box-shadow: var(--shadow);
