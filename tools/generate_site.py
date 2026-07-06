@@ -65,6 +65,7 @@ class Site:
     url: str
     tags: tuple[str, ...]
     note: str
+    added_date: str = ""
 
     @property
     def domain(self) -> str:
@@ -73,7 +74,7 @@ class Site:
 
     @property
     def search_text(self) -> str:
-        return " ".join([self.name, self.domain, self.note, *self.tags]).lower()
+        return " ".join([self.name, self.domain, self.note, self.added_date, *self.tags]).lower()
 
     @property
     def caution(self) -> bool:
@@ -116,6 +117,7 @@ def load_sites() -> tuple[str, str, list[Site]]:
         if not any(row):
             continue
         index_raw, name_raw, url_raw, tags_raw, note_raw = row[:5]
+        added_date_raw = row[5] if len(row) > 5 else ""
         name = text(name_raw)
         url = text(url_raw)
         if not name or not url:
@@ -132,6 +134,7 @@ def load_sites() -> tuple[str, str, list[Site]]:
                 url=url,
                 tags=split_tags(text(tags_raw)),
                 note=text(note_raw),
+                added_date=text(added_date_raw),
             )
         )
 
@@ -179,9 +182,9 @@ def write_cover(title: str, sites: list[Site]) -> None:
 def write_csv(sites: list[Site]) -> None:
     with OUTPUTS["csv"].open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle)
-        writer.writerow(["序号", "站点", "AFF链接", "标签", "备注"])
+        writer.writerow(["序号", "站点", "AFF链接", "标签", "备注", "添加日期"])
         for site in sites:
-            writer.writerow([site.index, site.name, site.url, ";".join(site.tags), site.note])
+            writer.writerow([site.index, site.name, site.url, ";".join(site.tags), site.note, site.added_date])
 
 
 def site_to_dict(site: Site) -> dict[str, object]:
@@ -192,6 +195,7 @@ def site_to_dict(site: Site) -> dict[str, object]:
         "domain": site.domain,
         "tags": list(site.tags),
         "note": site.note,
+        "added_date": site.added_date,
     }
 
 
@@ -226,25 +230,13 @@ def write_markdown(title: str, subtitle: str, updated: str, sites: list[Site]) -
         "",
         "使用提醒：请保护个人隐私和数据安全；不同站点的额度、倍率、模型和注册状态会变化，请自行判断风险。本仓库只做导航收录，不对任何中转站服务质量负责。",
         "",
-        "| 序号 | 站点 | 专属链接 | 标签 | 备注 |",
-        "| --- | --- | --- | --- | --- |",
+        "| 序号 | 站点 | 专属链接 | 标签 | 备注 | 添加日期 |",
+        "| --- | --- | --- | --- | --- | --- |",
     ]
     for site in sites:
         rows.append(
-            f"| {site.index} | {site.name} | {markdown_link(site)} | {'; '.join(site.tags)} | {site.note} |"
+            f"| {site.index} | {site.name} | {markdown_link(site)} | {'; '.join(site.tags)} | {site.note} | {site.added_date} |"
         )
-    rows.extend(
-        [
-            "",
-            "## 文件",
-            "",
-            "- `index.html`：适合 GitHub Pages 的静态导航页。",
-            "- `data/sites.json`：结构化站点数据，只包含专属链接。",
-            "- `ai-api-sites-table.csv`：从 xlsx 导出的公开 CSV。",
-            "- `robots.txt` / `sitemap.xml`：搜索引擎收录入口。",
-            "- `tools/generate_site.py`：从本地 xlsx 重新生成静态文件；xlsx 源表不提交到公开仓库。",
-        ]
-    )
     content = "\n".join(rows) + "\n"
     OUTPUTS["readme"].write_text(content, encoding="utf-8")
     OUTPUTS["markdown"].write_text(content, encoding="utf-8")
@@ -259,6 +251,11 @@ def tag_html(tag: str) -> str:
 def card_html(site: Site) -> str:
     tags = "".join(tag_html(tag) for tag in site.tags)
     caution = " caution" if site.caution else ""
+    added_date = (
+        f'\n          <p class="added-date"><span>添加日期</span>{esc(site.added_date)}</p>'
+        if site.added_date
+        else ""
+    )
     return f"""
         <article class="site-card{caution}" data-tags="{esc(' '.join(site.tags))}" data-search="{esc(site.search_text)}">
           <div class="site-main">
@@ -269,7 +266,7 @@ def card_html(site: Site) -> str:
             </div>
             <a class="visit" href="{esc(site.url)}" target="_blank" rel="sponsored noopener noreferrer" aria-label="访问 {esc(site.name)} 专属链接">访问</a>
           </div>
-          <div class="tags">{tags}</div>
+          <div class="tags">{tags}</div>{added_date}
           <p class="note">{esc(site.note)}</p>
         </article>"""
 
@@ -553,6 +550,19 @@ def write_html(title: str, subtitle: str, updated: str, sites: list[Site]) -> st
       font-size: 12px;
       line-height: 1;
       overflow-wrap: anywhere;
+    }}
+    .added-date {{
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin: -2px 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }}
+    .added-date span {{
+      color: #315047;
+      font-weight: 700;
     }}
     .note {{
       margin: 0;
