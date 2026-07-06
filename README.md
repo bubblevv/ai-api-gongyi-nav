@@ -35,3 +35,4 @@
 | 29 | super | [super](https://superapi.buzz/register?aff=E3S9) | 签到; Plus; 超低倍率; 限时活动 | 登录送4刀，但是倍率是0.001；限时随机开放，正常plus倍率0.1，约等于4000刀/40刀 |  |
 | 30 | J3GB | [J3GB](https://vip.j3gb.com/register?aff=KEHXUQAGYBF8) | 公益; 注册赠送; 邀请; 充值; 低倍率 | 【0701新增】注册送15刀；邀请送30刀，需要被邀请用户首次调用 API 解锁余额；充值 1:15，约等于0.067倍率 | 2026-07-01 |
 | 31 | JianZhiLe | [JianZhiLe](https://jianzhile.vip/register?aff=iszB) | 签到; 公益; 注册赠送; 邀请; GPT; 低倍率 | 【0706新增】注册20刀，签到20刀；邀请人奖励10刀；0.5x倍率 GPT | 2026-07-06 |
+| 32 | 0d0d | [0d0d](https://ai.0d0d.top/register?ref=ioc8gkzq) | 公益; 邀请码; 兑换码; 注册赠送; DeepSeek; Kimi; MiniMax; 国模 | 【0706新增】邀请码注册送20刀；输入兑换码 L4EAVCEP4R42XW7W 再得28刀；仅有 DeepSeek v4、Kimi 2.6、MiniMax 2.7 等国模 | 2026-07-06 |

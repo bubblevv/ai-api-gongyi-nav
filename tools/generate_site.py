@@ -71,7 +71,7 @@ KEYWORDS = [
 ]
 
 FILTER_TAGS = ["公益", "Claude", "GPT", "DeepSeek", "生图", "稳定", "注册赠送", "签到"]
-AFF_SIGNALS = ("aff=", "/invite/", "invite=")
+AFF_SIGNALS = ("aff=", "/invite/", "invite=", "ref=")
 
 
 @dataclass(frozen=True)

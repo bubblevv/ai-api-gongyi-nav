@@ -59,6 +59,23 @@ class LoadSitesTests(unittest.TestCase):
 
         self.assertEqual(sites[0].added_date, "")
 
+    def test_load_sites_accepts_referral_ref_query(self) -> None:
+        generate_site.SOURCE = self.write_workbook(
+            ["序号", "站点", "链接", "标签", "备注", "添加日期"],
+            [
+                1,
+                "0d0d",
+                "https://ai.0d0d.top/register?ref=ioc8gkzq",
+                "公益;国模",
+                "邀请码注册送20刀",
+                "2026-07-06",
+            ],
+        )
+
+        _, _, sites = generate_site.load_sites()
+
+        self.assertEqual(sites[0].url, "https://ai.0d0d.top/register?ref=ioc8gkzq")
+
     def test_write_markdown_omits_generated_file_manifest(self) -> None:
         temp_dir = tempfile.TemporaryDirectory()
         self.addCleanup(temp_dir.cleanup)
