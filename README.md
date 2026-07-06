@@ -1,14 +1,12 @@
-# 公益站导航
+# AI API 公益站导航
 
-> 收录的站都可以编程、龙虾、酒馆，使用请保护个人隐私和数据安全，本站不对任何收录的中转站负责
+> 收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。
 
 更新日期：2026-07-06
 
-关键词：ai api、AI API、公益中转站、公益 API、AI API 中转站、GPT、GPT API、Claude、Claude API、Codex、Codex 编程、DeepSeek、Gemini、GLM、MiniMax、New API、ChatGPT API、免费 AI API、AI API 导航、编程、龙虾、酒馆
+这里整理可用于编程、酒馆、龙虾和日常模型调用的 AI API 公益站与中转站入口，重点覆盖 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex 等常见模型。
 
-本仓库整理 AI API 公益中转站、GPT API、Claude API、Codex 编程、DeepSeek API 等导航入口。所有可点击站点链接均来自 `ai-api-sites-table.xlsx` 中的专属 aff / invite 链接。
-
-使用提醒：请保护个人隐私和数据安全；不同站点的额度、倍率、模型和注册状态会变化，请自行判断风险。本仓库只做导航收录，不对任何中转站服务质量负责。
+使用前请自行确认额度、倍率、模型可用性和注册状态；不要上传隐私数据、密钥或敏感文件。本站只做导航收录，不对任何第三方站点的服务质量、稳定性或数据安全负责。
 
 | 序号 | 站点 | 专属链接 | 标签 | 备注 | 添加日期 |
 | --- | --- | --- | --- | --- | --- |

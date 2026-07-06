@@ -32,26 +32,42 @@ OUTPUTS = {
 KEYWORDS = [
     "ai api",
     "AI API",
+    "AI API 公益站",
     "公益中转站",
     "公益 API",
     "AI API 中转站",
+    "AI 中转站",
+    "API 中转站",
     "GPT",
     "GPT API",
+    "GPT API 免费",
+    "OpenAI API",
+    "OpenAI API 中转",
     "Claude",
     "Claude API",
+    "Claude API 中转",
     "Codex",
     "Codex 编程",
     "DeepSeek",
+    "DeepSeek API",
+    "DeepSeek API 免费",
     "Gemini",
+    "Gemini API",
     "GLM",
+    "GLM API",
     "MiniMax",
     "New API",
+    "New API 公益站",
     "ChatGPT API",
     "免费 AI API",
     "AI API 导航",
+    "免费 API 额度",
+    "API 签到额度",
     "编程",
+    "编程 API",
     "龙虾",
     "酒馆",
+    "酒馆 API",
 ]
 
 FILTER_TAGS = ["公益", "Claude", "GPT", "DeepSeek", "生图", "稳定", "注册赠送", "签到"]
@@ -164,8 +180,8 @@ def write_cover(title: str, sites: list[Site]) -> None:
     draw.rectangle((0, 18, 1200, 32), fill="#2457a6")
     draw.rectangle((0, 32, 1200, 42), fill="#d98b2b")
     draw.text((64, 78), title, fill="#15231f", font=title_font)
-    draw.text((68, 156), "GPT / Claude / Codex / DeepSeek / 公益中转站 / AI API 导航", fill="#38524a", font=sub_font)
-    draw.text((68, 207), f"收录 {len(sites)} 个专属注册链接，来自 ai-api-sites-table.xlsx", fill="#66736f", font=small_font)
+    draw.text((68, 156), "GPT / Claude / Codex / DeepSeek / 免费额度 / API 中转", fill="#38524a", font=sub_font)
+    draw.text((68, 207), f"收录 {len(sites)} 个 AI API 公益站和中转站入口", fill="#66736f", font=small_font)
 
     columns = [(68, 284), (438, 284), (808, 284)]
     for idx, site in enumerate(sites[:9]):
@@ -216,7 +232,6 @@ def markdown_link(site: Site) -> str:
 
 
 def write_markdown(title: str, subtitle: str, updated: str, sites: list[Site]) -> str:
-    tag_line = "、".join(KEYWORDS)
     rows = [
         f"# {title}",
         "",
@@ -224,11 +239,9 @@ def write_markdown(title: str, subtitle: str, updated: str, sites: list[Site]) -
         "",
         f"更新日期：{updated}",
         "",
-        f"关键词：{tag_line}",
+        "这里整理可用于编程、酒馆、龙虾和日常模型调用的 AI API 公益站与中转站入口，重点覆盖 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex 等常见模型。",
         "",
-        "本仓库整理 AI API 公益中转站、GPT API、Claude API、Codex 编程、DeepSeek API 等导航入口。所有可点击站点链接均来自 `ai-api-sites-table.xlsx` 中的专属 aff / invite 链接。",
-        "",
-        "使用提醒：请保护个人隐私和数据安全；不同站点的额度、倍率、模型和注册状态会变化，请自行判断风险。本仓库只做导航收录，不对任何中转站服务质量负责。",
+        "使用前请自行确认额度、倍率、模型可用性和注册状态；不要上传隐私数据、密钥或敏感文件。本站只做导航收录，不对任何第三方站点的服务质量、稳定性或数据安全负责。",
         "",
         "| 序号 | 站点 | 专属链接 | 标签 | 备注 | 添加日期 |",
         "| --- | --- | --- | --- | --- | --- |",
@@ -274,8 +287,8 @@ def card_html(site: Site) -> str:
 def write_html(title: str, subtitle: str, updated: str, sites: list[Site]) -> str:
     keyword_text = ", ".join(KEYWORDS)
     description = (
-        "AI API 公益中转站导航，收录 GPT、Claude、Codex、DeepSeek、New API、"
-        "免费 AI API 等可用于编程、龙虾、酒馆等场景的专属注册链接。"
+        "AI API 公益站和中转站导航，整理 GPT、Claude、DeepSeek、Gemini、"
+        "Codex、New API 等接口入口，适合编程、酒馆、龙虾和免费额度检索。"
     )
     filters = "\n".join(
         f'<button class="filter" type="button" data-filter="{esc(tag)}">{esc(tag)}</button>' for tag in FILTER_TAGS
@@ -304,7 +317,7 @@ def write_html(title: str, subtitle: str, updated: str, sites: list[Site]) -> st
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(title)} | AI API 公益中转站 GPT Claude Codex DeepSeek</title>
+  <title>{esc(title)} | AI API 公益站 GPT Claude DeepSeek 免费中转站</title>
   <meta name="description" content="{esc(description)}">
   <meta name="keywords" content="{esc(keyword_text)}">
   <link rel="canonical" href="{esc(SITE_URL)}">
@@ -583,16 +596,6 @@ def write_html(title: str, subtitle: str, updated: str, sites: list[Site]) -> st
       font-size: 13px;
       line-height: 1.7;
     }}
-    .keyword-cloud {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 12px;
-    }}
-    .keyword-cloud span {{
-      padding: 4px 0;
-      color: #315047;
-    }}
     @media (max-width: 920px) {{
       .hero {{ grid-template-columns: 1fr; }}
       .cover {{ max-width: 560px; }}
@@ -619,7 +622,7 @@ def write_html(title: str, subtitle: str, updated: str, sites: list[Site]) -> st
       <div>
         <p class="eyebrow">AI API / GPT / Claude / Codex / DeepSeek</p>
         <h1>{esc(title)}</h1>
-        <p class="subtitle">{esc(subtitle)} 本页只放 xlsx 中整理的专属 aff / invite 链接，方便检索 AI API 公益中转站、免费 API、编程模型和酒馆接口入口。</p>
+        <p class="subtitle">{esc(subtitle)} 支持按模型、额度、倍率、签到、酒馆、编程等标签快速筛选。</p>
         <div class="stats" aria-label="站点概览">
           <div class="stat"><b>{len(sites)}</b><span>收录站点</span></div>
           <div class="stat"><b>{sum('公益' in site.tags for site in sites)}</b><span>公益标签</span></div>
@@ -642,7 +645,7 @@ def write_html(title: str, subtitle: str, updated: str, sites: list[Site]) -> st
   <main class="wrap">
     <div class="meta-row">
       <span id="count">显示 {len(sites)} 个站点</span>
-      <span>所有访问按钮均为专属 aff / invite 链接</span>
+      <span>请自行确认额度、倍率、模型和注册状态</span>
     </div>
     <section class="grid" id="sites" aria-label="AI API 公益中转站列表">
       {cards}
@@ -650,10 +653,7 @@ def write_html(title: str, subtitle: str, updated: str, sites: list[Site]) -> st
     <p class="empty" id="empty">没有匹配的站点</p>
   </main>
   <footer class="wrap">
-    <p>请保护个人隐私和数据安全；额度、倍率、模型和注册状态可能随时变化。本页只做 AI API 公益中转站导航收录，不对任何站点服务质量负责。</p>
-    <div class="keyword-cloud" aria-label="关键词">
-      {"".join(f"<span>{esc(keyword)}</span>" for keyword in KEYWORDS)}
-    </div>
+    <p>请保护个人隐私和数据安全；额度、倍率、模型和注册状态可能随时变化。本站只做 AI API 公益站和中转站导航收录，不对任何第三方站点服务质量负责。</p>
   </footer>
   <script>
     const searchInput = document.querySelector("#search");
