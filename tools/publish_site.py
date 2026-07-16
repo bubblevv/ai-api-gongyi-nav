@@ -144,9 +144,17 @@ def parse_site_copy(copy_text: str, added_date: str) -> ParsedSite:
     return ParsedSite(name=name, url=url, tags=tags, note=note, added_date=added_date)
 
 
-def normalized_domain(url: str) -> str:
-    hostname = urlparse(url).hostname or ""
-    return hostname.lower().removeprefix("www.")
+def normalized_url(url: str) -> str:
+    parsed = urlparse(url)
+    host = (parsed.hostname or "").lower()
+    if ":" in host and not host.startswith("["):
+        host = f"[{host}]"
+    port = parsed.port
+    if port is not None and (parsed.scheme.lower(), port) not in {("http", 80), ("https", 443)}:
+        host = f"{host}:{port}"
+    path = parsed.path.rstrip("/") or "/"
+    query = f"?{parsed.query}" if parsed.query else ""
+    return f"{parsed.scheme.lower()}://{host}{path}{query}"
 
 
 def find_header_row(sheet: object) -> int:
@@ -173,9 +181,9 @@ def existing_rows(workbook_path: Path) -> tuple[int, list[tuple[int, str]]]:
 
 def next_index(workbook_path: Path, site: ParsedSite) -> int:
     _, rows = existing_rows(workbook_path)
-    domain = normalized_domain(site.url)
-    if any(normalized_domain(url) == domain for _, url in rows):
-        raise ValueError(f"domain already exists: {domain}")
+    url = normalized_url(site.url)
+    if any(normalized_url(existing_url) == url for _, existing_url in rows):
+        raise ValueError(f"URL already exists: {url}")
     return max((index for index, _ in rows), default=0) + 1
 
 

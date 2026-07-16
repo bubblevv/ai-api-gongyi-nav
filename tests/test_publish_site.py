@@ -83,15 +83,26 @@ class WorkbookTests(unittest.TestCase):
         self.assertEqual(index, 2)
         self.assertEqual(row, (2, "新站", site.url, "公益;GPT", "注册送 1 刀", "2026-07-16"))
 
-    def test_append_site_rejects_existing_normalized_domain(self) -> None:
+    def test_append_site_rejects_existing_normalized_url(self) -> None:
         workbook = self.workbook()
         site = publish_site.parse_site_copy(
-            "站点：重复站\nhttps://old.example/register?aff=new\n备注：重复域名",
+            "站点：重复站\nHTTPS://OLD.EXAMPLE/register/?aff=old\n备注：重复链接",
             added_date="2026-07-16",
         )
 
-        with self.assertRaisesRegex(ValueError, "already exists"):
+        with self.assertRaisesRegex(ValueError, "URL already exists"):
             publish_site.append_site(workbook, site)
+
+    def test_append_site_allows_distinct_referral_url_on_existing_domain(self) -> None:
+        workbook = self.workbook()
+        site = publish_site.parse_site_copy(
+            "站点：同域新链接\nhttps://old.example/register?aff=new\n备注：不同邀请链接",
+            added_date="2026-07-16",
+        )
+
+        index = publish_site.append_site(workbook, site)
+
+        self.assertEqual(index, 2)
 
     def test_dry_run_does_not_mutate_workbook(self) -> None:
         workbook = self.workbook()
