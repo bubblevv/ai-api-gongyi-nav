@@ -4,6 +4,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from subprocess import run
 
 from openpyxl import Workbook, load_workbook
 
@@ -48,6 +49,15 @@ class ParseCopyTests(unittest.TestCase):
 
 
 class WorkbookTests(unittest.TestCase):
+    def test_source_workbook_is_not_ignored(self) -> None:
+        result = run(
+            ["git", "check-ignore", "-q", "ai-api-sites-table.xlsx"],
+            cwd=ROOT,
+            check=False,
+        )
+
+        self.assertNotEqual(result.returncode, 0)
+
     def workbook(self) -> Path:
         directory = tempfile.TemporaryDirectory()
         self.addCleanup(directory.cleanup)
