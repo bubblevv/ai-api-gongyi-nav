@@ -329,7 +329,7 @@ Use the new skill with this prompt:
 
 ```text
 发布站点：星河 API
-链接：https://old.example/register?aff=abc
+链接：https://dawclaudecode.com/register?aff=abc
 标签：公益;GPT
 备注：注册赠送 10 刀
 ```
