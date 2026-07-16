@@ -63,7 +63,7 @@ The frontmatter must be:
 ```yaml
 ---
 name: imes-db-debugging
-description: Use when diagnosing or changing IMES SQL Server business logic, stored procedures, BDJB audit scripts, PDA save/get interfaces, reporting, material issue, batch, transaction, result-set, or production database errors across customer environments.
+description: Use when diagnosing or changing IMES SQL Server business logic across customer environments, including IMES 数据库、存储过程、BDJB、PDA、报工、领料、批号、事务、结果集、同步或生产报错.
 ---
 ```
 
@@ -124,7 +124,7 @@ interface:
 Run:
 
 ```powershell
-python C:\Users\30313\.codex\skills\.system\skill-creator\scripts\quick_validate.py C:\Users\30313\.codex\skills\imes-db-debugging
+python -X utf8 C:\Users\30313\.codex\skills\.system\skill-creator\scripts\quick_validate.py C:\Users\30313\.codex\skills\imes-db-debugging
 ```
 
 Expected: validation succeeds with exit code `0`.
