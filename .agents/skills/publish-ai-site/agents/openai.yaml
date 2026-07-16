@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publish AI Site"
+  short_description: "Publish a validated AI API listing"
+  default_prompt: "Publish this AI API site listing from my promotional copy."
