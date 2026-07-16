@@ -12,7 +12,8 @@ domains. URL normalization:
 
 - lowercases the scheme and host;
 - removes the default HTTP/HTTPS port; and
-- treats an empty path and `/` as the same path.
+- removes a trailing slash from a non-root path, and treats an empty path and
+  `/` as the same path.
 
 The path and query string remain significant. Therefore, links on the same
 domain with different registration paths or different referral parameters are
