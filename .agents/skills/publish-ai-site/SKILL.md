@@ -43,7 +43,7 @@ note cannot be determined.
    python tools\publish_site.py --input $tempFile --dry-run
    ```
 
-   Stop for a parse error or duplicate domain. On success, report the parsed
+   Stop for a parse error or duplicate normalized URL. On success, report the parsed
    name, URL, tags, note, and predicted index, then continue immediately.
 4. Publish the source entry and regenerate the site:
 
@@ -90,7 +90,7 @@ note cannot be determined.
 | Condition | Required behavior |
 | --- | --- |
 | Missing or ambiguous copy | Request the missing field; do not write files. |
-| Duplicate normalized domain | Stop without writing, committing, or pushing. |
+| Duplicate normalized URL | Stop without writing, committing, or pushing. |
 | Generator, tests, or diff check fails | Do not stage, commit, or push. Preserve the diagnostic output. |
 | Push is rejected | Report the local commit hash and stop. |
 

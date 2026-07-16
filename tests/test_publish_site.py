@@ -173,6 +173,11 @@ class SkillSafetyTests(unittest.TestCase):
 
         self.assertIn("python tools\\publish_site.py --preflight", skill)
 
+    def test_skill_stops_for_duplicate_normalized_url(self) -> None:
+        skill = (ROOT / ".agents" / "skills" / "publish-ai-site" / "SKILL.md").read_text(encoding="utf-8")
+
+        self.assertIn("Duplicate normalized URL", skill)
+
 
 class GitPreflightTests(unittest.TestCase):
     def repository(self) -> Path:
