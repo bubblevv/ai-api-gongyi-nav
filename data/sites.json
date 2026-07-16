@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-07-16",
+  "updated": "2026-07-06",
   "keywords": [
     "ai api",
     "AI API",
@@ -428,18 +428,6 @@
       ],
       "note": "【0706新增】注册4美元，邀请奖励2美元；0.3倍率，可签到",
       "added_date": "2026-07-06"
-    },
-    {
-      "index": 35,
-      "name": "星河 API",
-      "url": "https://old.example/register?aff=abc",
-      "domain": "old.example",
-      "tags": [
-        "公益",
-        "GPT"
-      ],
-      "note": "注册赠送 10 刀",
-      "added_date": "2026-07-16"
     }
   ]
 }
