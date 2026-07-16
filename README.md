@@ -2,7 +2,7 @@
 
 > 收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。
 
-更新日期：2026-07-06
+更新日期：2026-07-16
 
 这里整理可用于编程、酒馆、龙虾和日常模型调用的 AI API 公益站与中转站入口，重点覆盖 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex 等常见模型。
 
@@ -38,3 +38,4 @@
 | 32 | 0d0d | [0d0d](https://ai.0d0d.top/register?ref=ioc8gkzq) | 公益; 邀请码; 兑换码; 注册赠送; DeepSeek; Kimi; MiniMax; 国模 | 【0706新增】邀请码注册送20刀；输入兑换码 L4EAVCEP4R42XW7W 再得28刀；仅有 DeepSeek v4、Kimi 2.6、MiniMax 2.7 等国模 | 2026-07-06 |
 | 33 | TokensHub | [TokensHub](https://api.tokenshub.site/register?aff=KXEDZYFPJTH6) | 注册赠送; Pro; 低倍率; K12; 体验卡 | 【0706新增】新用户注册可领3天 Pro 体验卡，含2元体验额度，按0.1倍率计费；有0.01倍率的 K12 | 2026-07-06 |
 | 34 | DawClaudeCode | [DawClaudeCode](https://dawclaudecode.com/register?aff=b8V0) | 签到; 注册赠送; 邀请; Claude; 低倍率 | 【0706新增】注册4美元，邀请奖励2美元；0.3倍率，可签到 | 2026-07-06 |
+| 35 | ai工具箱 | [ai工具箱](https://api.aiaiai001.com/sign-up?aff=ahhq) | GPT | 实测：邮箱注册 倍率：GPT-Plus-特价 0.1x 邀请：邀请注册双方各得5刀余额 须知：可用5.6sol | 2026-07-16 |
