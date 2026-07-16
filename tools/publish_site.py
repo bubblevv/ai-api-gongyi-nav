@@ -7,6 +7,7 @@ import sys
 from dataclasses import asdict, dataclass
 from datetime import date
 from pathlib import Path
+from subprocess import run
 from typing import Callable
 from urllib.parse import urlparse
 
@@ -187,12 +188,61 @@ def append_site(workbook_path: Path, site: ParsedSite) -> int:
     return index
 
 
+def snapshot_generated_files() -> dict[Path, bytes | None]:
+    snapshots: dict[Path, bytes | None] = {}
+    for relative_path in RELEASE_PATHS:
+        if relative_path == "ai-api-sites-table.xlsx":
+            continue
+        path = ROOT / relative_path
+        snapshots[path] = path.read_bytes() if path.is_file() else None
+    return snapshots
+
+
+def restore_generated_files(snapshots: dict[Path, bytes | None]) -> None:
+    for path, content in snapshots.items():
+        if content is None:
+            path.unlink(missing_ok=True)
+        else:
+            path.write_bytes(content)
+
+
+def require_clean_git_preflight(repository: Path) -> None:
+    staged = run(
+        ["git", "-C", str(repository), "diff", "--cached", "--quiet"],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if staged.returncode == 1:
+        raise ValueError("Git index contains staged changes")
+    if staged.returncode != 0:
+        raise RuntimeError(staged.stderr.strip() or "could not inspect Git index")
+
+    release_status = run(
+        ["git", "-C", str(repository), "status", "--porcelain", "--", *RELEASE_PATHS],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if release_status.returncode != 0:
+        raise RuntimeError(release_status.stderr.strip() or "could not inspect release paths")
+    if release_status.stdout.strip():
+        raise ValueError("release paths already changed")
+
+
 def publish(workbook_path: Path, site: ParsedSite, dry_run: bool, generate: Callable[[], None]) -> PublishResult:
     index = next_index(workbook_path, site)
     if dry_run:
         return PublishResult(site=site, index=index, dry_run=True)
-    append_site(workbook_path, site)
-    generate()
+    original_workbook = workbook_path.read_bytes()
+    generated_files = snapshot_generated_files()
+    try:
+        append_site(workbook_path, site)
+        generate()
+    except Exception:
+        workbook_path.write_bytes(original_workbook)
+        restore_generated_files(generated_files)
+        raise
     return PublishResult(site=site, index=index, dry_run=False)
 
 
@@ -205,10 +255,19 @@ def main() -> int:
     parser.add_argument("--input", type=Path, help="UTF-8 promotional copy file")
     parser.add_argument("--dry-run", action="store_true", help="Validate and preview without writing")
     parser.add_argument("--release-paths", action="store_true", help="Print paths that may be staged for release")
+    parser.add_argument("--preflight", action="store_true", help="Require a clean index and unchanged release paths")
     args = parser.parse_args()
 
     if args.release_paths:
         print("\n".join(RELEASE_PATHS))
+        return 0
+    if args.preflight:
+        try:
+            require_clean_git_preflight(ROOT)
+        except (RuntimeError, ValueError) as error:
+            print(str(error), file=sys.stderr)
+            return 1
+        print("Git preflight passed")
         return 0
     if args.input is None:
         parser.error("--input is required unless --release-paths is used")

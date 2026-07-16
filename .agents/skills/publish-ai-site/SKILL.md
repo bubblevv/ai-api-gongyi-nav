@@ -28,7 +28,14 @@ note cannot be determined.
 ## Workflow
 
 1. Show `git status --short` so existing changes are visible. Do not stage,
-   modify, or clean unrelated files.
+   modify, or clean unrelated files. Require a clean index and unchanged
+   release paths before writing:
+
+   ```powershell
+   python tools\publish_site.py --preflight
+   $releasePaths = @(python tools\publish_site.py --release-paths)
+   ```
+
 2. Write the supplied copy to a UTF-8 temporary file outside the repository.
 3. Run the preview and inspect its JSON output:
 
@@ -50,13 +57,15 @@ note cannot be determined.
 5. Stage only changed paths from the publisher's allowlist:
 
    ```powershell
-   $releasePaths = @(python tools\publish_site.py --release-paths)
    $changedPaths = @(git diff --name-only)
    $pathsToStage = @($releasePaths | Where-Object { $changedPaths -contains $_ })
    if ($pathsToStage.Count -eq 0) { throw "Publisher changed no release paths." }
    git add -- ai-api-sites-table.xlsx
    $generatedPaths = @($pathsToStage | Where-Object { $_ -ne "ai-api-sites-table.xlsx" })
    if ($generatedPaths.Count -gt 0) { git add -- $generatedPaths }
+   $stagedPaths = @(git diff --cached --name-only)
+   $unexpectedStagedPaths = @($stagedPaths | Where-Object { $_ -notin $releasePaths })
+   if ($unexpectedStagedPaths.Count -gt 0) { throw "Unexpected staged paths: $($unexpectedStagedPaths -join ', ')" }
    git diff --cached --check
    git diff --cached --name-only
    ```

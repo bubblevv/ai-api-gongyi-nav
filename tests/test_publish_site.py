@@ -106,11 +106,96 @@ class WorkbookTests(unittest.TestCase):
         self.assertEqual(result.index, 2)
         self.assertEqual(before, workbook.read_bytes())
 
+    def test_publish_restores_workbook_when_generator_fails(self) -> None:
+        workbook = self.workbook()
+        before = workbook.read_bytes()
+        site = publish_site.parse_site_copy(
+            "站点：失败站\nhttps://failure.example/register?aff=failure\n备注：生成失败",
+            added_date="2026-07-16",
+        )
+
+        with self.assertRaisesRegex(RuntimeError, "generator failed"):
+            publish_site.publish(
+                workbook,
+                site,
+                dry_run=False,
+                generate=lambda: (_ for _ in ()).throw(RuntimeError("generator failed")),
+            )
+
+        self.assertEqual(before, workbook.read_bytes())
+
+    def test_publish_restores_generated_files_when_generator_fails(self) -> None:
+        original_root = publish_site.ROOT
+        with tempfile.TemporaryDirectory() as directory:
+            output_root = Path(directory)
+            generated_file = output_root / "index.html"
+            generated_file.write_text("before", encoding="utf-8")
+            publish_site.ROOT = output_root
+            workbook = self.workbook()
+            site = publish_site.parse_site_copy(
+                "站点：失败站\nhttps://failure.example/register?aff=failure\n备注：生成失败",
+                added_date="2026-07-16",
+            )
+
+            def failing_generator() -> None:
+                generated_file.write_text("after", encoding="utf-8")
+                raise RuntimeError("generator failed")
+
+            try:
+                with self.assertRaisesRegex(RuntimeError, "generator failed"):
+                    publish_site.publish(workbook, site, dry_run=False, generate=failing_generator)
+            finally:
+                publish_site.ROOT = original_root
+
+            self.assertEqual(generated_file.read_text(encoding="utf-8"), "before")
+
     def test_release_paths_are_explicit_and_exclude_reports(self) -> None:
         self.assertIn("ai-api-sites-table.xlsx", publish_site.RELEASE_PATHS)
         self.assertIn("data/sites.json", publish_site.RELEASE_PATHS)
         self.assertNotIn("reports", publish_site.RELEASE_PATHS)
         self.assertNotIn("tools/collect_candidates.py", publish_site.RELEASE_PATHS)
+
+
+class SkillSafetyTests(unittest.TestCase):
+    def test_skill_uses_publisher_git_preflight_before_publishing(self) -> None:
+        skill = (ROOT / ".agents" / "skills" / "publish-ai-site" / "SKILL.md").read_text(encoding="utf-8")
+
+        self.assertIn("python tools\\publish_site.py --preflight", skill)
+
+
+class GitPreflightTests(unittest.TestCase):
+    def repository(self) -> Path:
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        repo = Path(directory.name)
+        for command in (
+            ["git", "init", "-q"],
+            ["git", "config", "user.email", "test@example.com"],
+            ["git", "config", "user.name", "Test User"],
+        ):
+            run(command, cwd=repo, check=True)
+        return repo
+
+    def test_git_preflight_rejects_staged_changes(self) -> None:
+        repo = self.repository()
+        (repo / "unrelated.txt").write_text("staged", encoding="utf-8")
+        run(["git", "add", "unrelated.txt"], cwd=repo, check=True)
+
+        with self.assertRaisesRegex(ValueError, "staged changes"):
+            publish_site.require_clean_git_preflight(repo)
+
+    def test_git_preflight_rejects_dirty_release_paths(self) -> None:
+        repo = self.repository()
+        (repo / "README.md").write_text("dirty", encoding="utf-8")
+
+        with self.assertRaisesRegex(ValueError, "release paths already changed"):
+            publish_site.require_clean_git_preflight(repo)
+
+    def test_git_preflight_allows_unrelated_untracked_files(self) -> None:
+        repo = self.repository()
+        (repo / "collector.txt").write_text("untracked", encoding="utf-8")
+
+        publish_site.require_clean_git_preflight(repo)
 
 
 if __name__ == "__main__":
