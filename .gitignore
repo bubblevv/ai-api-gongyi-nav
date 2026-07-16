@@ -1,5 +1,6 @@
 output/
 .playwright-cli/
+.worktrees/
 __pycache__/
 *.pyc
 .env
