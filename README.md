@@ -40,3 +40,5 @@
 | 34 | DawClaudeCode | [DawClaudeCode](https://dawclaudecode.com/register?aff=b8V0) | 签到; 注册赠送; 邀请; Claude; 低倍率 | 【0706新增】注册4美元，邀请奖励2美元；0.3倍率，可签到 | 2026-07-06 |
 | 35 | ai工具箱 | [ai工具箱](https://api.aiaiai001.com/sign-up?aff=ahhq) | GPT | 实测：邮箱注册 倍率：GPT-Plus-特价 0.1x 邀请：邀请注册双方各得5刀余额 须知：可用5.6sol | 2026-07-16 |
 | 36 | VC | [VC](https://sub.vcnovb.cn/register?aff=SM594AJGQRNR) |  | 倍率0.01，每天可抽奖，最高5刀 | 2026-07-16 |
+
+| 37 | JiuRelay | [JiuRelay](https://jiurelay.com/) | 免费; GPT; Claude; GLM; 免注册 | 【0718新增】免费AI API中转，免注册即开即用，1小时有效Key，支持GPT/Claude/GLM/Gemini/DeepSeek等20+模型，OpenAI/Anthropic兼容 | 2026-07-18 |
