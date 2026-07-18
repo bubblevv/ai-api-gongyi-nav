@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-07-16",
+  "updated": "2026-07-18",
   "keywords": [
     "ai api",
     "AI API",
@@ -448,6 +448,23 @@
       "tags": [],
       "note": "倍率0.01，每天可抽奖，最高5刀",
       "added_date": "2026-07-16"
+    },
+    {
+      "index": 37,
+      "name": "JiuRelay",
+      "url": "https://jiurelay.com/",
+      "domain": "jiurelay.com",
+      "tags": [
+        "免费",
+        "GPT",
+        "Claude",
+        "GLM",
+        "免注册",
+        "Gemini",
+        "DeepSeek"
+      ],
+      "note": "【0718新增】免费AI API中转，免注册即开即用，1小时有效Key，支持GPT/Claude/GLM/Gemini/DeepSeek等20+模型，100% OpenAI/Anthropic兼容格式",
+      "added_date": "2026-07-18"
     }
   ]
 }
