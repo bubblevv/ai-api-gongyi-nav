@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-07-16",
+  "updated": "2026-07-28",
   "keywords": [
     "ai api",
     "AI API",
@@ -448,6 +448,17 @@
       "tags": [],
       "note": "倍率0.01，每天可抽奖，最高5刀",
       "added_date": "2026-07-16"
+    },
+    {
+      "index": 37,
+      "name": "JBB 金贝贝",
+      "url": "https://downstream.jbbtoken.cn/sign-up?aff=FfEj",
+      "domain": "downstream.jbbtoken.cn",
+      "tags": [
+        "GPT"
+      ],
+      "note": "进群给2刀；倍率：kiro 0.2x，gpt 0.1x，ccmax 0.5x",
+      "added_date": "2026-07-28"
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 > 收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。
 
-更新日期：2026-07-16
+更新日期：2026-07-28
 
 这里整理可用于编程、酒馆、龙虾和日常模型调用的 AI API 公益站与中转站入口，重点覆盖 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex 等常见模型。
 
@@ -40,3 +40,4 @@
 | 34 | DawClaudeCode | [DawClaudeCode](https://dawclaudecode.com/register?aff=b8V0) | 签到; 注册赠送; 邀请; Claude; 低倍率 | 【0706新增】注册4美元，邀请奖励2美元；0.3倍率，可签到 | 2026-07-06 |
 | 35 | ai工具箱 | [ai工具箱](https://api.aiaiai001.com/sign-up?aff=ahhq) | GPT | 实测：邮箱注册 倍率：GPT-Plus-特价 0.1x 邀请：邀请注册双方各得5刀余额 须知：可用5.6sol | 2026-07-16 |
 | 36 | VC | [VC](https://sub.vcnovb.cn/register?aff=SM594AJGQRNR) |  | 倍率0.01，每天可抽奖，最高5刀 | 2026-07-16 |
+| 37 | JBB 金贝贝 | [JBB 金贝贝](https://downstream.jbbtoken.cn/sign-up?aff=FfEj) | GPT | 进群给2刀；倍率：kiro 0.2x，gpt 0.1x，ccmax 0.5x | 2026-07-28 |
