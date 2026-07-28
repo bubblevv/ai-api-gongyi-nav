@@ -480,6 +480,15 @@
       ],
       "note": "进群领1刀，每天可签到，GPT 0.02x。",
       "added_date": "2026-07-28"
+    },
+    {
+      "index": 40,
+      "name": "CHH",
+      "url": "https://api.chhlink.xyz/register?aff=4UFN5ZCRNDKV",
+      "domain": "api.chhlink.xyz",
+      "tags": [],
+      "note": "进群领50刀。",
+      "added_date": "2026-07-28"
     }
   ]
 }
