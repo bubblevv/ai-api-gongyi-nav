@@ -42,3 +42,4 @@
 | 36 | VC | [VC](https://sub.vcnovb.cn/register?aff=SM594AJGQRNR) |  | 倍率0.01，每天可抽奖，最高5刀 | 2026-07-16 |
 | 37 | JBB 金贝贝 | [JBB 金贝贝](https://downstream.jbbtoken.cn/sign-up?aff=FfEj) | GPT | 进群给2刀；倍率：kiro 0.2x，gpt 0.1x，ccmax 0.5x | 2026-07-28 |
 | 38 | 启悟流 | [启悟流](https://756777.xyz/register?aff=3R885475B5SZ) |  | 注册加群领50刀体验卡，充值比例1：10，最低0.049倍率；邀请好友注册并充值满10元，双方各领66刀体验卡；充值100元可获888刀体验卡。 | 2026-07-28 |
+| 39 | 中专大王 | [中专大王](http://www.xn--ohq4b780ces0a.xyz/sign-up?aff=aqhj) | 签到; GPT | 进群领1刀，每天可签到，GPT 0.02x。 | 2026-07-28 |
