@@ -2,7 +2,7 @@
 
 > 收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。
 
-更新日期：2026-07-28
+更新日期：2026-07-29
 
 这里整理可用于编程、酒馆、龙虾和日常模型调用的 AI API 公益站与中转站入口，重点覆盖 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex 等常见模型。
 
@@ -44,3 +44,4 @@
 | 38 | 启悟流 | [启悟流](https://756777.xyz/register?aff=3R885475B5SZ) |  | 注册加群领50刀体验卡，充值比例1：10，最低0.049倍率；邀请好友注册并充值满10元，双方各领66刀体验卡；充值100元可获888刀体验卡。 | 2026-07-28 |
 | 39 | 中专大王 | [中专大王](http://www.xn--ohq4b780ces0a.xyz/sign-up?aff=aqhj) | 签到; GPT | 进群领1刀，每天可签到，GPT 0.02x。 | 2026-07-28 |
 | 40 | CHH | [CHH](https://api.chhlink.xyz/register?aff=4UFN5ZCRNDKV) |  | 进群领50刀。 | 2026-07-28 |
+| 41 | gorouter | [gorouter](https://gorouter.app/sign-up?aff=GvWs) | 注册赠送; Claude | 需要使用 GitHub 注册，注册赠送70刀，可使用 Claude。 | 2026-07-29 |

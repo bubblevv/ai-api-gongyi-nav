@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-07-28",
+  "updated": "2026-07-29",
   "keywords": [
     "ai api",
     "AI API",
@@ -489,6 +489,18 @@
       "tags": [],
       "note": "进群领50刀。",
       "added_date": "2026-07-28"
+    },
+    {
+      "index": 41,
+      "name": "gorouter",
+      "url": "https://gorouter.app/sign-up?aff=GvWs",
+      "domain": "gorouter.app",
+      "tags": [
+        "注册赠送",
+        "Claude"
+      ],
+      "note": "需要使用 GitHub 注册，注册赠送70刀，可使用 Claude。",
+      "added_date": "2026-07-29"
     }
   ]
 }
