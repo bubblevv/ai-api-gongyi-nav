@@ -46,3 +46,4 @@
 | 40 | CHH | [CHH](https://api.chhlink.xyz/register?aff=4UFN5ZCRNDKV) |  | 进群领50刀。 | 2026-07-28 |
 | 41 | gorouter | [gorouter](https://gorouter.app/sign-up?aff=GvWs) | 注册赠送; Claude | 需要使用 GitHub 注册，注册赠送70刀，可使用 Claude。 | 2026-07-29 |
 | 42 | modelport | [modelport](https://modelport.link/register?aff=KXEDZYFPJTH6) | GPT | 进群联系管理员可领取官倍 ¥3 站内体验额度，GPT 0.1x。 | 2026-07-30 |
+| 43 | JuCodex | [JuCodex](https://jucodex.com/register?aff=6PXc) | 注册赠送; GPT; Codex | 注册赠送3刀，GPT 0.05x。 | 2026-07-30 |
