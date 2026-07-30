@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-07-29",
+  "updated": "2026-07-30",
   "keywords": [
     "ai api",
     "AI API",
@@ -501,6 +501,17 @@
       ],
       "note": "需要使用 GitHub 注册，注册赠送70刀，可使用 Claude。",
       "added_date": "2026-07-29"
+    },
+    {
+      "index": 42,
+      "name": "modelport",
+      "url": "https://modelport.link/register?aff=KXEDZYFPJTH6",
+      "domain": "modelport.link",
+      "tags": [
+        "GPT"
+      ],
+      "note": "进群联系管理员可领取官倍 ¥3 站内体验额度，GPT 0.1x。",
+      "added_date": "2026-07-30"
     }
   ]
 }
