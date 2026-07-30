@@ -525,6 +525,17 @@
       ],
       "note": "注册赠送3刀，GPT 0.05x。",
       "added_date": "2026-07-30"
+    },
+    {
+      "index": 44,
+      "name": "NexaRelay",
+      "url": "https://api.nexarelay.com/register?aff=RVTTQ4NBGE6X",
+      "domain": "api.nexarelay.com",
+      "tags": [
+        "注册赠送"
+      ],
+      "note": "注册赠送3刀，0.2x 倍率，相当于15刀额度。",
+      "added_date": "2026-07-30"
     }
   ]
 }
