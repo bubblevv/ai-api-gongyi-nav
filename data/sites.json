@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-07-30",
+  "updated": "2026-08-05",
   "keywords": [
     "ai api",
     "AI API",
@@ -536,6 +536,15 @@
       ],
       "note": "注册赠送3刀，0.2x 倍率，相当于15刀额度。",
       "added_date": "2026-07-30"
+    },
+    {
+      "index": 45,
+      "name": "云核",
+      "url": "https://api.yunhe.one/sign-up?aff=fPZa",
+      "domain": "api.yunhe.one",
+      "tags": [],
+      "note": "注册送4刀，试营业plus 0.08倍率",
+      "added_date": "2026-08-05"
     }
   ]
 }

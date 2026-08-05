@@ -2,7 +2,7 @@
 
 > 收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。
 
-更新日期：2026-07-30
+更新日期：2026-08-05
 
 这里整理可用于编程、酒馆、龙虾和日常模型调用的 AI API 公益站与中转站入口，重点覆盖 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex 等常见模型。
 
@@ -48,3 +48,4 @@
 | 42 | modelport | [modelport](https://modelport.link/register?aff=KXEDZYFPJTH6) | GPT | 进群联系管理员可领取官倍 ¥3 站内体验额度，GPT 0.1x。 | 2026-07-30 |
 | 43 | JuCodex | [JuCodex](https://jucodex.com/register?aff=6PXc) | 注册赠送; GPT; Codex | 注册赠送3刀，GPT 0.05x。 | 2026-07-30 |
 | 44 | NexaRelay | [NexaRelay](https://api.nexarelay.com/register?aff=RVTTQ4NBGE6X) | 注册赠送 | 注册赠送3刀，0.2x 倍率，相当于15刀额度。 | 2026-07-30 |
+| 45 | 云核 | [云核](https://api.yunhe.one/sign-up?aff=fPZa) |  | 注册送4刀，试营业plus 0.08倍率 | 2026-08-05 |
