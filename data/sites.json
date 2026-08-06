@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-08-05",
+  "updated": "2026-08-06",
   "keywords": [
     "ai api",
     "AI API",
@@ -545,6 +545,21 @@
       "tags": [],
       "note": "注册送4刀，试营业plus 0.08倍率",
       "added_date": "2026-08-05"
+    },
+    {
+      "index": 46,
+      "name": "Orbelis",
+      "url": "https://nova.vcrauo.com/sign-up?aff=qhik",
+      "domain": "nova.vcrauo.com",
+      "tags": [
+        "签到",
+        "注册赠送",
+        "DeepSeek",
+        "Gemini",
+        "GLM"
+      ],
+      "note": "支持 QQ 邮箱、GitHub 注册；Plus、Grok 特惠模型 0.04×，Plus 高速模型 0.08×；通过邀请码注册赠送 1 美元，进群或 Telegram 再领 1 美元，每日签到赠送 0.2 美元；DeepSeek 和 GLM 5.2 免费，另支持 Gemini。",
+      "added_date": "2026-08-06"
     }
   ]
 }
