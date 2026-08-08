@@ -49,4 +49,5 @@
 | 43 | JuCodex | [JuCodex](https://jucodex.com/register?aff=6PXc) | 注册赠送; GPT; Codex | 注册赠送3刀，GPT 0.05x。 | 2026-07-30 |
 | 44 | NexaRelay | [NexaRelay](https://api.nexarelay.com/register?aff=RVTTQ4NBGE6X) | 注册赠送 | 注册赠送3刀，0.2x 倍率，相当于15刀额度。 | 2026-07-30 |
 | 45 | 云核 | [云核](https://api.yunhe.one/sign-up?aff=fPZa) |  | 注册送4刀，试营业plus 0.08倍率 | 2026-08-05 |
-| 46 | Orbelis | [Orbelis](https://nova.vcrauo.com/sign-up?aff=qhik) | 签到; 注册赠送; DeepSeek; Gemini; GLM | 支持 QQ 邮箱、GitHub 注册；Plus、Grok 特惠模型 0.04×，Plus 高速模型 0.08×；通过邀请码注册赠送 1 美元，进群或 Telegram 再领 1 美元，每日签到赠送 0.2 美元；DeepSeek 和 GLM 5.2 免费，另支持 Gemini。 | 2026-08-06 |
+| 46 | Orbelis | [Orbelis](https://nova.vcrauo.com/sign-up?aff=qhik) | 签到; 注册赠送; DeepSeek; Gemini; GLM | 支持 QQ 邮箱、GitHub 注册；Plus、Grok 特惠模型 0.04×，Plus 高速模型 0.08×；通过邀请码注册赠送 1 美元，进群或 Telegram 再领 1 美元，每日签到赠送 0.2 美元；DeepSeek 和 GLM 5.2 免费，另支持 Gemini。 | 2026-08-06 |    
+| 47 | xinxiwang | [xinxiwang](https://www.xinxiwang.org/wwzin) | 注册赠送 | 注册赠送1额度；支持 QQ 邮；有签到；注册赠送1yuan;有免费模型：deepseek,gml,混元，付费模型gpt*5,claud*15e,gemini*4,grok*1| 2026-08-08 |
