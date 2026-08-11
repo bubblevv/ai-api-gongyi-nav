@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-08-10",
+  "updated": "2026-08-11",
   "keywords": [
     "ai api",
     "AI API",
@@ -571,6 +571,18 @@
       ],
       "note": "邀请码注册 22 刀，1 倍率",
       "added_date": "2026-08-10"
+    },
+    {
+      "index": 48,
+      "name": "tabitoken",
+      "url": "https://tabitoken.com/sign-up?aff=ySIl",
+      "domain": "tabitoken.com",
+      "tags": [
+        "注册赠送",
+        "邀请"
+      ],
+      "note": "实测注册赠送120刀，仅有CC模型，没有GPT；倍率1X；邀请1人奖励20刀。",
+      "added_date": "2026-08-11"
     }
   ]
 }

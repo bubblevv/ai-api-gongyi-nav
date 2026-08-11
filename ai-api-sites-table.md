@@ -2,7 +2,7 @@
 
 > 收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。
 
-更新日期：2026-08-10
+更新日期：2026-08-11
 
 这里整理可用于编程、酒馆、龙虾和日常模型调用的 AI API 公益站与中转站入口，重点覆盖 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex 等常见模型。
 
@@ -51,3 +51,4 @@
 | 45 | 云核 | [云核](https://api.yunhe.one/sign-up?aff=fPZa) |  | 注册送4刀，试营业plus 0.08倍率 | 2026-08-05 |
 | 46 | Orbelis | [Orbelis](https://nova.vcrauo.com/sign-up?aff=qhik) | 签到; 注册赠送; DeepSeek; Gemini; GLM | 支持 QQ 邮箱、GitHub 注册；Plus、Grok 特惠模型 0.04×，Plus 高速模型 0.08×；通过邀请码注册赠送 1 美元，进群或 Telegram 再领 1 美元，每日签到赠送 0.2 美元；DeepSeek 和 GLM 5.2 免费，另支持 Gemini。 | 2026-08-06 |
 | 47 | 卡皮巴拉 API | [卡皮巴拉 API](https://kapibala.asia/sign-up?aff=pEQ6) | GPT | 邀请码注册 22 刀，1 倍率 | 2026-08-10 |
+| 48 | tabitoken | [tabitoken](https://tabitoken.com/sign-up?aff=ySIl) | 注册赠送; 邀请 | 实测注册赠送120刀，仅有CC模型，没有GPT；倍率1X；邀请1人奖励20刀。 | 2026-08-11 |
