@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-08-16",
+  "updated": "2026-08-17",
   "keywords": [
     "ai api",
     "AI API",
@@ -595,6 +595,17 @@
       ],
       "note": "注册即到账 $2：通过邀请链接 + QQ邮箱注册，双方立刻各得 $2 额度！（⚠️必须使用QQ邮箱） 首充无门槛送 $3：充值 1 元也算首充！立得 $3 美金调用额度。 0.08X GPT 0.15X CLAUDE",
       "added_date": "2026-08-16"
+    },
+    {
+      "index": 50,
+      "name": "ai.alsl.xyz",
+      "url": "https://ai.alsl.xyz/register?aff=GP6NPUZHHEW8",
+      "domain": "ai.alsl.xyz",
+      "tags": [
+        "GPT"
+      ],
+      "note": "注册送10刀新人体验gpt",
+      "added_date": "2026-08-17"
     }
   ]
 }
