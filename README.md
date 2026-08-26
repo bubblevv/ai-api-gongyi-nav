@@ -55,3 +55,9 @@
 | 49 | straitapi | [straitapi](https://straitapi.com/sign-up?aff=WU5M) | Claude; GPT | 注册即到账 $2：通过邀请链接 + QQ邮箱注册，双方立刻各得 $2 额度！（⚠️必须使用QQ邮箱） 首充无门槛送 $3：充值 1 元也算首充！立得 $3 美金调用额度。 0.08X GPT 0.15X CLAUDE | 2026-08-16 |
 | 50 | ai.alsl.xyz | [ai.alsl.xyz](https://ai.alsl.xyz/register?aff=GP6NPUZHHEW8) | GPT | 注册送10刀新人体验gpt | 2026-08-17 |
 | 51 | sudoflow | [sudoflow](https://sudoflow.top/sign-up?aff=WLW8) | GPT | AFF：https://sudoflow.top/sign-up?aff=WLW8 注册：QQ邮箱注册 倍率：0.065x的gpt 邀请：注册送7 刀 | 2026-08-19 |
+
+## 相关开源教程
+
+| 项目 | 说明 | 收录日期 |
+| --- | --- | --- |
+| [OpenCode 中文部署实战指南](https://github.com/lifugui-175/opencode-cn-guide) | OpenCode 多模型省钱流部署教程：DeepSeek/Kimi/智谱/硅基流动/OpenRouter 免费模型矩阵、MCP 配置、国内网络优化 | 2026-08-26 |
