@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-09-01",
+  "updated": "2026-10-09",
   "keywords": [
     "ai api",
     "AI API",
@@ -629,6 +629,18 @@
       ],
       "note": "注册送 50，只有 DeepSeek 可用",
       "added_date": "2026-09-01"
+    },
+    {
+      "index": 53,
+      "name": "aotera",
+      "url": "https://aotera.cc/sign-up?aff=gC8q",
+      "domain": "aotera.cc",
+      "tags": [
+        "签到",
+        "GPT"
+      ],
+      "note": "邮箱注册 大额签到站，第一天送6，0.1倍率GPT，相当60刀。签到在个人资料",
+      "added_date": "2026-10-09"
     }
   ]
 }
