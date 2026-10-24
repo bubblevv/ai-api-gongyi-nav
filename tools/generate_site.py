@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "ai-api-sites-table.xlsx"
-SITE_URL = "https://bubblevv.github.io/ai-api-gongyi-nav/"
+SITE_URL = "https://1261398983.github.io/ai-api-gongyi-nav/"
 OUTPUTS = {
     "index": ROOT / "index.html",
     "table_html": ROOT / "ai-api-sites-table.html",
