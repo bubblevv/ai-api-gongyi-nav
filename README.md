@@ -2,6 +2,12 @@
 
 > 收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。
 
+> ### 🔗 本站作者自用的中转站
+>
+> **[Sample Gateway]()** — 一个 OpenAI 兼容端点统管 Claude / GPT / Gemini / Grok。
+> 注册只需 QQ 邮箱，无需邀请码、无需外币卡；按量计费，输入输出分开计价，倍率在控制台公开。
+> [[CC] 改两行环境变量即可接入 →]()
+
 更新日期：2026-09-30
 
 这里整理可用于编程、酒馆、龙虾和日常模型调用的 AI API 公益站与中转站入口，重点覆盖 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex 等常见模型。
