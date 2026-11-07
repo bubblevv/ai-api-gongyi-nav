@@ -4,9 +4,7 @@
 
 > ### 🔗 本站作者自用的中转站
 >
-> **[Sample Gateway]()** — 一个 OpenAI 兼容端点统管 Claude / GPT / Gemini / Grok。
 > 注册只需 QQ 邮箱，无需邀请码、无需外币卡；按量计费，输入输出分开计价，倍率在控制台公开。
-> [[CC] 改两行环境变量即可接入 →]()
 
 更新日期：2026-09-30
 
@@ -62,4 +60,3 @@
 | 50 | ai.alsl.xyz | [ai.alsl.xyz](https://ai.alsl.xyz/register?aff=GP6NPUZHHEW8) | GPT | 注册送10刀新人体验gpt | 2026-08-17 |
 | 51 | sudoflow | [sudoflow](https://sudoflow.top/sign-up?aff=WLW8) | GPT | AFF：https://sudoflow.top/sign-up?aff=WLW8 注册：QQ邮箱注册 倍率：0.065x的gpt 邀请：注册送7 刀 | 2026-08-19 |
 | 52 | New API | [New API](https://xxs.l.cd/sign-up?aff=RhO4) | 注册赠送; DeepSeek | 注册送 50，只有 DeepSeek 可用 | 2026-09-01 |
-| 53 | removed | [removed]() | 国模 0.08倍率; OpenAI+Anthropic 双协议; 免梯子; 支付宝微信 | 【0930新增】中转站，国模分组 0.08x（官网价 8%），open ai pro 分组 0.22x；同一个 base URL 同时支持 OpenAI 与 Anthropic 协议，Claude Code / Codex CLI 不改代码可接；四端点实测均 200；QQ 邮箱注册，支付宝/微信充值 | 2026-09-30 |
