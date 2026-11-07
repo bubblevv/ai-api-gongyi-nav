@@ -57,4 +57,4 @@
 | 51 | sudoflow | [sudoflow](https://sudoflow.top/sign-up?aff=WLW8) | GPT | AFF：https://sudoflow.top/sign-up?aff=WLW8 注册：QQ邮箱注册 倍率：0.065x的gpt 邀请：注册送7 刀 | 2026-08-19 |
 | 52 | New API | [New API](https://xxs.l.cd/sign-up?aff=RhO4) | 注册赠送; DeepSeek | 注册送 50，只有 DeepSeek 可用 | 2026-09-01 |
 | 53 | aotera | [aotera](https://aotera.cc/sign-up?aff=gC8q) | 签到; GPT | 邮箱注册 大额签到站，第一天送6，0.1倍率GPT，相当60刀。签到在个人资料 | 2026-10-09 |
-| 59 | NovAI | [NovAI](https://aiapi-pro.com/register?utm_source=gongyi_nav) | DeepSeek; 通义; GLM; Kimi; MiniMax; 生图; 视频; USDT | 【1108新增】聚合 111 个国产模型、0% 平台加价；注册送 $2；5 个模型永久免费（每天 10 次），充值后这 5 个模型不限次数 |  |
+| 59 | NovAI | [NovAI](https://aiapi-pro.com/register?utm_source=gongyi_nav) | DeepSeek; 通义; GLM; Kimi; MiniMax; 生图; 视频; USDT | 【1108新增】聚合 109 个国产模型、0% 平台加价；注册送 $2；5 个模型永久免费（每天 10 次），充值后这 5 个模型不限次数 |  |
