@@ -2,7 +2,7 @@
 
 > 收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。
 
-更新日期：2026-10-09
+更新日期：2026-11-14
 
 这里整理可用于编程、酒馆、龙虾和日常模型调用的 AI API 公益站与中转站入口，重点覆盖 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex 等常见模型。
 
@@ -57,3 +57,4 @@
 | 51 | sudoflow | [sudoflow](https://sudoflow.top/sign-up?aff=WLW8) | GPT | AFF：https://sudoflow.top/sign-up?aff=WLW8 注册：QQ邮箱注册 倍率：0.065x的gpt 邀请：注册送7 刀 | 2026-08-19 |
 | 52 | New API | [New API](https://xxs.l.cd/sign-up?aff=RhO4) | 注册赠送; DeepSeek | 注册送 50，只有 DeepSeek 可用 | 2026-09-01 |
 | 53 | aotera | [aotera](https://aotera.cc/sign-up?aff=gC8q) | 签到; GPT | 邮箱注册 大额签到站，第一天送6，0.1倍率GPT，相当60刀。签到在个人资料 | 2026-10-09 |
+| 54 | axoai | [axoai](https://axoai.cc/sign-up?aff=TzNK) | 注册赠送; 需加群; GPT; 低倍率 | 注册送 2 刀，加群 149635520 再送 3 刀，GPT 最低 0.05 倍率，相当于 100 刀。 | 2026-11-14 |

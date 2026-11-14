@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-10-09",
+  "updated": "2026-11-14",
   "keywords": [
     "ai api",
     "AI API",
@@ -641,6 +641,20 @@
       ],
       "note": "邮箱注册 大额签到站，第一天送6，0.1倍率GPT，相当60刀。签到在个人资料",
       "added_date": "2026-10-09"
+    },
+    {
+      "index": 54,
+      "name": "axoai",
+      "url": "https://axoai.cc/sign-up?aff=TzNK",
+      "domain": "axoai.cc",
+      "tags": [
+        "注册赠送",
+        "需加群",
+        "GPT",
+        "低倍率"
+      ],
+      "note": "注册送 2 刀，加群 149635520 再送 3 刀，GPT 最低 0.05 倍率，相当于 100 刀。",
+      "added_date": "2026-11-14"
     }
   ]
 }
