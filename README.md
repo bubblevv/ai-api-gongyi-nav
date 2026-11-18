@@ -58,3 +58,4 @@
 | 52 | New API | [New API](https://xxs.l.cd/sign-up?aff=RhO4) | 注册赠送; DeepSeek | 注册送 50，只有 DeepSeek 可用 | 2026-09-01 |
 | 53 | aotera | [aotera](https://aotera.cc/sign-up?aff=gC8q) | 签到; GPT | 邮箱注册 大额签到站，第一天送6，0.1倍率GPT，相当60刀。签到在个人资料 | 2026-10-09 |
 | 54 | axoai | [axoai](https://axoai.cc/sign-up?aff=TzNK) | 注册赠送; 需加群; GPT; 低倍率 | 注册送 2 刀，加群 149635520 再送 3 刀，GPT 最低 0.05 倍率，相当于 100 刀。 | 2026-11-14 |
+| 55 | Kejike | [Kejike](https://sub.kejike.top/register) | 中转; GPT; Claude; Codex | 付费中转站，OpenAI 兼容接口，官网 https://www.kejike.top，覆盖 GPT、Claude、Codex、DeepSeek 等模型 | 2026-11-18 |
