@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7fc">
+  <title>$title | GPT、Claude、DeepSeek 中转站目录</title>
+  <meta name="description" content="$description">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="$site_url">
+  <link rel="icon" href="assets/ai-api-gongyi-nav-cover.png">
+  <meta property="og:title" content="$title">
+  <meta property="og:description" content="$description">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:image" content="$cover_url">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="$site_url">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">$json_ld</script>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f7fc;
+      --white: #fff;
+      --ink: #211936;
+      --muted: #625976;
+      --line: #e6e0f1;
+      --accent: #542db3;
+      --accent-dark: #3d2184;
+      --accent-soft: #eee7ff;
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body {
+      margin: 0;
+      font-family: "Inter", "Aptos", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-underline-offset: .2em; }
+    button, input { font: inherit; }
+    :focus-visible { outline: 3px solid #7951cf; outline-offset: 3px; }
+    .wrap { width: min(1184px, calc(100% - 64px)); margin-inline: auto; }
+    .topbar { border-bottom: 1px solid var(--line); background: var(--white); }
+    .topbar nav, .brand { display: flex; align-items: center; }
+    .topbar nav { justify-content: space-between; gap: 16px; min-height: 68px; }
+    .brand { gap: 10px; font-weight: 750; text-decoration: none; }
+    .brand-mark {
+      display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px;
+      background: var(--accent); color: var(--white); font-size: 21px; line-height: 1;
+    }
+    .repo {
+      padding: 6px 13px; border-radius: 9px; border: 1px solid var(--line);
+      color: var(--muted); text-decoration: none; white-space: nowrap; font-size: 14px; font-weight: 650;
+    }
+    .repo:hover { color: var(--accent); border-color: #c5b3ef; }
+    .hero {
+      margin-block: 28px 38px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+      gap: 28px;
+      padding: 40px;
+      border: 1px solid #e5ddfb;
+      border-radius: 26px;
+      background: linear-gradient(119deg, #f4efff 0%, #e9e0ff 100%);
+    }
+    .hero-copy { align-self: center; }
+    h1 { margin: 0; font-size: clamp(34px, 5vw, 62px); line-height: 1.15; letter-spacing: -.04em; }
+    .subtitle { margin: 16px 0 0; max-width: 36em; font-size: 16px; line-height: 1.75; color: #4f4466; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; margin-top: 23px; }
+    .primary {
+      display: inline-flex; align-items: center; gap: 12px; min-height: 43px; padding: 7px 16px;
+      color: var(--white); background: var(--accent); border-radius: 10px;
+      font-size: 14px; font-weight: 750; text-decoration: none;
+    }
+    .primary:hover { background: var(--accent-dark); }
+    .updated { margin: 0; font-size: 13px; color: #55496b; font-variant-numeric: tabular-nums; }
+    .diagram {
+      position: relative; min-height: 213px; overflow: hidden; display: grid; place-items: center;
+      border-radius: 18px;
+      background:
+        repeating-linear-gradient(0deg, transparent 0 23px, #ffffff0c 23px 24px),
+        repeating-linear-gradient(90deg, transparent 0 23px, #ffffff0c 23px 24px),
+        radial-gradient(ellipse at 69% 75%, #4e2f92, #241747 76%);
+    }
+    .orbit {
+      position: absolute; inset: 50% auto auto 50%;
+      width: min(68%, 260px); height: 46%; border: 1px solid #ba9fff9c; border-radius: 50%;
+      transform: translate(-50%, -50%) rotate(-24deg);
+    }
+    .orbit::after {
+      content: ""; position: absolute; top: 48%; right: -5px;
+      width: 10px; height: 10px; border-radius: 50%; background: #d5c2ff; box-shadow: 0 0 16px #c0a0ff;
+    }
+    .orbit.second { transform: translate(-50%, -50%) rotate(24deg); border-color: #ba9fff60; }
+    .orbit.second::after { right: auto; left: -4px; top: 43%; width: 8px; height: 8px; background: #9aefdf; }
+    .diagram::before, .diagram::after {
+      content: "+"; position: absolute; font: 18px ui-monospace, monospace; color: #eee1ff99;
+    }
+    .diagram::before { inset: 14px auto auto 17px; }
+    .diagram::after { inset: auto 17px 14px auto; }
+    .diagram-core {
+      z-index: 1; display: grid; place-items: center; width: 82px; height: 82px;
+      border: 1px solid #9e77fa; border-radius: 23px; color: #fff; background: #512ba9;
+      box-shadow: 0 0 0 7px #b897f62e, 0 0 38px #aa75ff60;
+      font-size: 26px; font-weight: 770; letter-spacing: .055em;
+    }
+    #sites { scroll-margin-top: 20px; }
+    .catalog-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+    .catalog-head h2 { margin: 0; font-size: 28px; letter-spacing: -.025em; }
+    .catalog-head p { margin: 0; color: var(--muted); font-size: 14px; white-space: nowrap; }
+    .tools { margin: 13px 0 24px; }
+    .search-box { position: relative; display: block; }
+    .search-box::before, .search-box::after { content: ""; position: absolute; pointer-events: none; color: var(--accent); }
+    .search-box::before { top: 17px; left: 17px; width: 11px; height: 11px; border: 2px solid currentColor; border-radius: 50%; }
+    .search-box::after { top: 29px; left: 29px; width: 7px; height: 2px; border-radius: 1px; background: currentColor; transform: rotate(45deg); }
+    #search {
+      width: 100%; min-height: 49px; padding: 10px 16px 10px 46px;
+      border: 1px solid #dcd3ee; border-radius: 12px; color: var(--ink); background: var(--white);
+      font-size: 15px;
+    }
+    #search::placeholder { color: var(--muted); }
+    .filters, .tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .filters { margin-top: 11px; }
+    .filter {
+      min-height: 35px; padding: 4px 13px; border: 1px solid var(--line); border-radius: 20px;
+      color: var(--muted); background: var(--white); font-size: 13px; cursor: pointer;
+    }
+    .filter:hover { color: var(--accent); border-color: #c5b3ef; }
+    .filter[aria-pressed="true"] { border-color: var(--accent); color: var(--white); background: var(--accent); }
+    .site-section { margin-top: 20px; }
+    .site-section + .site-section { margin-top: 37px; }
+    .site-section h3, .section-note { display: inline-block; margin: 0 0 12px; }
+    .site-section h3 { font-size: 19px; }
+    .section-note { margin-left: 10px; color: var(--muted); font-size: 13px; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .site-card {
+      display: flex; flex-direction: column; min-width: 0; padding: 19px;
+      scroll-margin-top: 18px;
+      border: 1px solid var(--line); border-radius: 15px; background: var(--white);
+      box-shadow: 0 2px 3px #28155704;
+    }
+    .site-card:hover { border-color: #cdc0e9; box-shadow: 0 7px 22px #2815570c; }
+    .site-card:target { border-color: var(--accent); outline: 2px solid var(--accent); outline-offset: 2px; }
+    .card-head { display: flex; align-items: center; gap: 11px; min-width: 0; }
+    .site-mark {
+      display: grid; place-items: center; flex: 0 0 42px; height: 42px;
+      border-radius: 11px; font-size: 20px; font-weight: 750;
+    }
+    .site-mark.violet { color: #542caa; background: #eee6ff; }
+    .site-mark.teal { color: #176355; background: #dbf3ed; }
+    .site-mark.berry { color: #8c3e6c; background: #f9e5f2; }
+    .site-identity { min-width: 0; overflow-wrap: anywhere; }
+    .site-identity h4 { margin: 0; font-size: 17px; line-height: 1.3; }
+    .domain { margin: 2px 0 0; font-size: 12px; color: var(--muted); }
+    .tags { list-style: none; padding: 0; margin: 12px 0 0; }
+    .tag { padding: 2px 8px; border-radius: 6px; background: #f2edf9; color: #5b4778; font-size: 12px; }
+    .note { margin: 12px 0 15px; color: #4e465e; font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; }
+    .card-foot {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: auto;
+      padding-top: 11px; border-top: 1px solid #eeeaf6; color: var(--muted); font-size: 12px;
+    }
+    .card-foot time { font-variant-numeric: tabular-nums; }
+    .visit {
+      display: inline-flex; align-items: center; gap: 5px; min-height: 33px; margin-left: auto;
+      padding: 3px 9px; border-radius: 7px; color: var(--accent-dark); background: var(--accent-soft);
+      text-decoration: none; font-size: 13px; font-weight: 750;
+    }
+    .visit:hover { color: var(--white); background: var(--accent); }
+    .empty { padding: 28px 18px; border: 1px dashed #d2c5e9; border-radius: 12px; color: var(--muted); text-align: center; }
+    footer {
+      margin-top: 41px; padding-block: 21px 32px; border-top: 1px solid var(--line);
+      color: var(--muted); font-size: 13px;
+    }
+    footer p { margin: 0; }
+    .visually-hidden {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0;
+    }
+    @media (max-width: 940px) {
+      .wrap { width: min(1184px, calc(100% - 44px)); }
+      .hero { padding: 28px; gap: 20px; }
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 660px) {
+      .wrap { width: calc(100% - 32px); }
+      .topbar nav { min-height: 58px; }
+      .hero { grid-template-columns: minmax(0, 1fr); padding: 22px; margin-block: 17px 26px; border-radius: 18px; }
+      .subtitle { margin-top: 11px; font-size: 14px; }
+      .hero-actions { margin-top: 17px; }
+      .diagram { display: none; }
+      .catalog-head h2 { font-size: 24px; }
+      .grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="wrap" aria-label="网站导航">
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">✦</span>AI API 导航</a>
+      <a class="repo" href="$repo_url">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <h1 id="page-title">$title</h1>
+        <p class="subtitle">$subtitle</p>
+        <div class="hero-actions">
+          <a class="primary" href="#sites">浏览目录 <span aria-hidden="true">↓</span></a>
+          <p class="updated">更新于 <time datetime="$updated">$updated</time></p>
+        </div>
+      </div>
+      <div class="diagram" aria-hidden="true">
+        <div class="orbit"></div><div class="orbit second"></div><div class="diagram-core">API</div>
+      </div>
+    </section>
+    <section id="sites" aria-labelledby="catalog-title">
+      <div class="catalog-head">
+        <h2 id="catalog-title">站点目录</h2>
+        <p id="count" role="status">共 $count 个站点</p>
+      </div>
+      <div class="tools" id="search-tools" role="search" aria-label="查找站点" hidden>
+        <label class="search-box" for="search">
+          <span class="visually-hidden">搜索站名、模型、标签或备注</span>
+          <input id="search" type="search" placeholder="搜索站名、模型、标签或备注" autocomplete="off">
+        </label>
+        <div class="filters" role="group" aria-label="按标签筛选">
+          <button class="filter" type="button" aria-pressed="true">全部</button>$filters
+        </div>
+      </div>$dated_section$archive_section
+      <p class="empty" id="empty" hidden>没有匹配的站点。试试其他关键词或标签。</p>
+    </section>
+  </main>
+  <footer class="wrap">
+    <p>部分链接为推广或邀请链接。请在注册或使用前确认站点的额度、倍率和隐私条款。</p>
+  </footer>
+  <script>
+    const tools = document.querySelector("#search-tools");
+    const search = document.querySelector("#search");
+    const count = document.querySelector("#count");
+    const empty = document.querySelector("#empty");
+    const buttons = [...tools.querySelectorAll(".filter")];
+    const sections = [...document.querySelectorAll(".site-section")].map(section => ({
+      section,
+      cards: [...section.querySelectorAll(".site-card")].map(card => ({
+        card,
+        tags: new Set([...card.querySelectorAll(".tag")].map(tag => tag.textContent)),
+      })),
+    }));
+    let activeTag = "";
+
+    function applyFilters() {
+      const terms = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      let visible = 0;
+      for (const {section, cards} of sections) {
+        let sectionCount = 0;
+        for (const {card, tags} of cards) {
+          const show = (!activeTag || tags.has(activeTag)) && terms.every(term => card.dataset.search.includes(term));
+          card.hidden = !show;
+          if (show) sectionCount += 1;
+        }
+        section.hidden = sectionCount === 0;
+        visible += sectionCount;
+      }
+      count.textContent = "显示 " + visible + " 个站点";
+      empty.hidden = visible !== 0;
+    }
+
+    search.addEventListener("input", applyFilters);
+    for (const button of buttons) {
+      button.addEventListener("click", () => {
+        activeTag = button.dataset.filter || "";
+        for (const item of buttons) item.setAttribute("aria-pressed", String(item === button));
+        applyFilters();
+      });
+    }
+    tools.hidden = false;
+  </script>
+</body>
+</html>

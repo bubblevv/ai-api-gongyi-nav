@@ -44,6 +44,325 @@
   ],
   "sites": [
     {
+      "index": 55,
+      "name": "星驰API公益站",
+      "url": "https://t.me/xingchi66bot?start=inv_1751327121",
+      "domain": "t.me",
+      "tags": [
+        "公益",
+        "需加群",
+        "GPT"
+      ],
+      "note": "TG 进群领 1000 刀兑换码，GPT 0.5X 倍率。",
+      "added_date": "2026-11-19"
+    },
+    {
+      "index": 54,
+      "name": "axoai",
+      "url": "https://axoai.cc/sign-up?aff=TzNK",
+      "domain": "axoai.cc",
+      "tags": [
+        "注册赠送",
+        "需加群",
+        "GPT",
+        "低倍率"
+      ],
+      "note": "注册送 2 刀，加群 149635520 再送 3 刀，GPT 最低 0.05 倍率，相当于 100 刀。",
+      "added_date": "2026-11-14"
+    },
+    {
+      "index": 53,
+      "name": "aotera",
+      "url": "https://aotera.cc/sign-up?aff=gC8q",
+      "domain": "aotera.cc",
+      "tags": [
+        "签到",
+        "GPT"
+      ],
+      "note": "邮箱注册 大额签到站，第一天送6，0.1倍率GPT，相当60刀。签到在个人资料",
+      "added_date": "2026-10-09"
+    },
+    {
+      "index": 52,
+      "name": "New API",
+      "url": "https://xxs.l.cd/sign-up?aff=RhO4",
+      "domain": "xxs.l.cd",
+      "tags": [
+        "注册赠送",
+        "DeepSeek"
+      ],
+      "note": "注册送 50，只有 DeepSeek 可用",
+      "added_date": "2026-09-01"
+    },
+    {
+      "index": 51,
+      "name": "sudoflow",
+      "url": "https://sudoflow.top/sign-up?aff=WLW8",
+      "domain": "sudoflow.top",
+      "tags": [
+        "GPT"
+      ],
+      "note": "AFF：https://sudoflow.top/sign-up?aff=WLW8 注册：QQ邮箱注册 倍率：0.065x的gpt 邀请：注册送7 刀",
+      "added_date": "2026-08-19"
+    },
+    {
+      "index": 50,
+      "name": "ai.alsl.xyz",
+      "url": "https://ai.alsl.xyz/register?aff=GP6NPUZHHEW8",
+      "domain": "ai.alsl.xyz",
+      "tags": [
+        "GPT"
+      ],
+      "note": "注册送10刀新人体验gpt",
+      "added_date": "2026-08-17"
+    },
+    {
+      "index": 49,
+      "name": "straitapi",
+      "url": "https://straitapi.com/sign-up?aff=WU5M",
+      "domain": "straitapi.com",
+      "tags": [
+        "Claude",
+        "GPT"
+      ],
+      "note": "注册即到账 $2：通过邀请链接 + QQ邮箱注册，双方立刻各得 $2 额度！（⚠️必须使用QQ邮箱） 首充无门槛送 $3：充值 1 元也算首充！立得 $3 美金调用额度。 0.08X GPT 0.15X CLAUDE",
+      "added_date": "2026-08-16"
+    },
+    {
+      "index": 48,
+      "name": "tabitoken",
+      "url": "https://tabitoken.com/sign-up?aff=ySIl",
+      "domain": "tabitoken.com",
+      "tags": [
+        "注册赠送",
+        "邀请"
+      ],
+      "note": "实测注册赠送120刀，仅有CC模型，没有GPT；倍率1X；邀请1人奖励20刀。",
+      "added_date": "2026-08-11"
+    },
+    {
+      "index": 47,
+      "name": "卡皮巴拉 API",
+      "url": "https://kapibala.asia/sign-up?aff=pEQ6",
+      "domain": "kapibala.asia",
+      "tags": [
+        "GPT"
+      ],
+      "note": "邀请码注册 22 刀，1 倍率",
+      "added_date": "2026-08-10"
+    },
+    {
+      "index": 46,
+      "name": "Orbelis",
+      "url": "https://nova.vcrauo.com/sign-up?aff=qhik",
+      "domain": "nova.vcrauo.com",
+      "tags": [
+        "签到",
+        "注册赠送",
+        "DeepSeek",
+        "Gemini",
+        "GLM"
+      ],
+      "note": "支持 QQ 邮箱、GitHub 注册；Plus、Grok 特惠模型 0.04×，Plus 高速模型 0.08×；通过邀请码注册赠送 1 美元，进群或 Telegram 再领 1 美元，每日签到赠送 0.2 美元；DeepSeek 和 GLM 5.2 免费，另支持 Gemini。",
+      "added_date": "2026-08-06"
+    },
+    {
+      "index": 45,
+      "name": "云核",
+      "url": "https://api.yunhe.one/sign-up?aff=fPZa",
+      "domain": "api.yunhe.one",
+      "tags": [],
+      "note": "注册送4刀，试营业plus 0.08倍率",
+      "added_date": "2026-08-05"
+    },
+    {
+      "index": 44,
+      "name": "NexaRelay",
+      "url": "https://api.nexarelay.com/register?aff=RVTTQ4NBGE6X",
+      "domain": "api.nexarelay.com",
+      "tags": [
+        "注册赠送"
+      ],
+      "note": "注册赠送3刀，0.2x 倍率，相当于15刀额度。",
+      "added_date": "2026-07-30"
+    },
+    {
+      "index": 43,
+      "name": "JuCodex",
+      "url": "https://jucodex.com/register?aff=6PXc",
+      "domain": "jucodex.com",
+      "tags": [
+        "注册赠送",
+        "GPT",
+        "Codex"
+      ],
+      "note": "注册赠送3刀，GPT 0.05x。",
+      "added_date": "2026-07-30"
+    },
+    {
+      "index": 42,
+      "name": "modelport",
+      "url": "https://modelport.link/register?aff=KXEDZYFPJTH6",
+      "domain": "modelport.link",
+      "tags": [
+        "GPT"
+      ],
+      "note": "进群联系管理员可领取官倍 ¥3 站内体验额度，GPT 0.1x。",
+      "added_date": "2026-07-30"
+    },
+    {
+      "index": 41,
+      "name": "gorouter",
+      "url": "https://gorouter.app/sign-up?aff=GvWs",
+      "domain": "gorouter.app",
+      "tags": [
+        "注册赠送",
+        "Claude"
+      ],
+      "note": "需要使用 GitHub 注册，注册赠送70刀，可使用 Claude。",
+      "added_date": "2026-07-29"
+    },
+    {
+      "index": 40,
+      "name": "CHH",
+      "url": "https://api.chhlink.xyz/register?aff=4UFN5ZCRNDKV",
+      "domain": "api.chhlink.xyz",
+      "tags": [],
+      "note": "进群领50刀。",
+      "added_date": "2026-07-28"
+    },
+    {
+      "index": 39,
+      "name": "中专大王",
+      "url": "http://www.xn--ohq4b780ces0a.xyz/sign-up?aff=aqhj",
+      "domain": "xn--ohq4b780ces0a.xyz",
+      "tags": [
+        "签到",
+        "GPT"
+      ],
+      "note": "进群领1刀，每天可签到，GPT 0.02x。",
+      "added_date": "2026-07-28"
+    },
+    {
+      "index": 38,
+      "name": "启悟流",
+      "url": "https://756777.xyz/register?aff=3R885475B5SZ",
+      "domain": "756777.xyz",
+      "tags": [],
+      "note": "注册加群领50刀体验卡，充值比例1：10，最低0.049倍率；邀请好友注册并充值满10元，双方各领66刀体验卡；充值100元可获888刀体验卡。",
+      "added_date": "2026-07-28"
+    },
+    {
+      "index": 37,
+      "name": "JBB 金贝贝",
+      "url": "https://downstream.jbbtoken.cn/sign-up?aff=FfEj",
+      "domain": "downstream.jbbtoken.cn",
+      "tags": [
+        "GPT"
+      ],
+      "note": "进群给2刀；倍率：kiro 0.2x，gpt 0.1x，ccmax 0.5x",
+      "added_date": "2026-07-28"
+    },
+    {
+      "index": 36,
+      "name": "VC",
+      "url": "https://sub.vcnovb.cn/register?aff=SM594AJGQRNR",
+      "domain": "sub.vcnovb.cn",
+      "tags": [],
+      "note": "倍率0.01，每天可抽奖，最高5刀",
+      "added_date": "2026-07-16"
+    },
+    {
+      "index": 35,
+      "name": "ai工具箱",
+      "url": "https://api.aiaiai001.com/sign-up?aff=ahhq",
+      "domain": "api.aiaiai001.com",
+      "tags": [
+        "GPT"
+      ],
+      "note": "实测：邮箱注册 倍率：GPT-Plus-特价 0.1x 邀请：邀请注册双方各得5刀余额 须知：可用5.6sol",
+      "added_date": "2026-07-16"
+    },
+    {
+      "index": 34,
+      "name": "DawClaudeCode",
+      "url": "https://dawclaudecode.com/register?aff=b8V0",
+      "domain": "dawclaudecode.com",
+      "tags": [
+        "签到",
+        "注册赠送",
+        "邀请",
+        "Claude",
+        "低倍率"
+      ],
+      "note": "【0706新增】注册4美元，邀请奖励2美元；0.3倍率，可签到",
+      "added_date": "2026-07-06"
+    },
+    {
+      "index": 33,
+      "name": "TokensHub",
+      "url": "https://api.tokenshub.site/register?aff=KXEDZYFPJTH6",
+      "domain": "api.tokenshub.site",
+      "tags": [
+        "注册赠送",
+        "Pro",
+        "低倍率",
+        "K12",
+        "体验卡"
+      ],
+      "note": "【0706新增】新用户注册可领3天 Pro 体验卡，含2元体验额度，按0.1倍率计费；有0.01倍率的 K12",
+      "added_date": "2026-07-06"
+    },
+    {
+      "index": 32,
+      "name": "0d0d",
+      "url": "https://ai.0d0d.top/register?ref=ioc8gkzq",
+      "domain": "ai.0d0d.top",
+      "tags": [
+        "公益",
+        "邀请码",
+        "兑换码",
+        "注册赠送",
+        "DeepSeek",
+        "Kimi",
+        "MiniMax",
+        "国模"
+      ],
+      "note": "【0706新增】邀请码注册送20刀；输入兑换码 L4EAVCEP4R42XW7W 再得28刀；仅有 DeepSeek v4、Kimi 2.6、MiniMax 2.7 等国模",
+      "added_date": "2026-07-06"
+    },
+    {
+      "index": 31,
+      "name": "JianZhiLe",
+      "url": "https://jianzhile.vip/register?aff=iszB",
+      "domain": "jianzhile.vip",
+      "tags": [
+        "签到",
+        "公益",
+        "注册赠送",
+        "邀请",
+        "GPT",
+        "低倍率"
+      ],
+      "note": "【0706新增】注册20刀，签到20刀；邀请人奖励10刀；0.5x倍率 GPT",
+      "added_date": "2026-07-06"
+    },
+    {
+      "index": 30,
+      "name": "J3GB",
+      "url": "https://vip.j3gb.com/register?aff=KEHXUQAGYBF8",
+      "domain": "vip.j3gb.com",
+      "tags": [
+        "公益",
+        "注册赠送",
+        "邀请",
+        "充值",
+        "低倍率"
+      ],
+      "note": "【0701新增】注册送15刀；邀请送30刀，需要被邀请用户首次调用 API 解锁余额；充值 1:15，约等于0.067倍率",
+      "added_date": "2026-07-01"
+    },
+    {
       "index": 1,
       "name": "Guys",
       "url": "https://www.guyscode.com/sign-up?aff=YAmP",
@@ -349,325 +668,6 @@
       ],
       "note": "登录送4刀，但是倍率是0.001；限时随机开放，正常plus倍率0.1，约等于4000刀/40刀",
       "added_date": ""
-    },
-    {
-      "index": 30,
-      "name": "J3GB",
-      "url": "https://vip.j3gb.com/register?aff=KEHXUQAGYBF8",
-      "domain": "vip.j3gb.com",
-      "tags": [
-        "公益",
-        "注册赠送",
-        "邀请",
-        "充值",
-        "低倍率"
-      ],
-      "note": "【0701新增】注册送15刀；邀请送30刀，需要被邀请用户首次调用 API 解锁余额；充值 1:15，约等于0.067倍率",
-      "added_date": "2026-07-01"
-    },
-    {
-      "index": 31,
-      "name": "JianZhiLe",
-      "url": "https://jianzhile.vip/register?aff=iszB",
-      "domain": "jianzhile.vip",
-      "tags": [
-        "签到",
-        "公益",
-        "注册赠送",
-        "邀请",
-        "GPT",
-        "低倍率"
-      ],
-      "note": "【0706新增】注册20刀，签到20刀；邀请人奖励10刀；0.5x倍率 GPT",
-      "added_date": "2026-07-06"
-    },
-    {
-      "index": 32,
-      "name": "0d0d",
-      "url": "https://ai.0d0d.top/register?ref=ioc8gkzq",
-      "domain": "ai.0d0d.top",
-      "tags": [
-        "公益",
-        "邀请码",
-        "兑换码",
-        "注册赠送",
-        "DeepSeek",
-        "Kimi",
-        "MiniMax",
-        "国模"
-      ],
-      "note": "【0706新增】邀请码注册送20刀；输入兑换码 L4EAVCEP4R42XW7W 再得28刀；仅有 DeepSeek v4、Kimi 2.6、MiniMax 2.7 等国模",
-      "added_date": "2026-07-06"
-    },
-    {
-      "index": 33,
-      "name": "TokensHub",
-      "url": "https://api.tokenshub.site/register?aff=KXEDZYFPJTH6",
-      "domain": "api.tokenshub.site",
-      "tags": [
-        "注册赠送",
-        "Pro",
-        "低倍率",
-        "K12",
-        "体验卡"
-      ],
-      "note": "【0706新增】新用户注册可领3天 Pro 体验卡，含2元体验额度，按0.1倍率计费；有0.01倍率的 K12",
-      "added_date": "2026-07-06"
-    },
-    {
-      "index": 34,
-      "name": "DawClaudeCode",
-      "url": "https://dawclaudecode.com/register?aff=b8V0",
-      "domain": "dawclaudecode.com",
-      "tags": [
-        "签到",
-        "注册赠送",
-        "邀请",
-        "Claude",
-        "低倍率"
-      ],
-      "note": "【0706新增】注册4美元，邀请奖励2美元；0.3倍率，可签到",
-      "added_date": "2026-07-06"
-    },
-    {
-      "index": 35,
-      "name": "ai工具箱",
-      "url": "https://api.aiaiai001.com/sign-up?aff=ahhq",
-      "domain": "api.aiaiai001.com",
-      "tags": [
-        "GPT"
-      ],
-      "note": "实测：邮箱注册 倍率：GPT-Plus-特价 0.1x 邀请：邀请注册双方各得5刀余额 须知：可用5.6sol",
-      "added_date": "2026-07-16"
-    },
-    {
-      "index": 36,
-      "name": "VC",
-      "url": "https://sub.vcnovb.cn/register?aff=SM594AJGQRNR",
-      "domain": "sub.vcnovb.cn",
-      "tags": [],
-      "note": "倍率0.01，每天可抽奖，最高5刀",
-      "added_date": "2026-07-16"
-    },
-    {
-      "index": 37,
-      "name": "JBB 金贝贝",
-      "url": "https://downstream.jbbtoken.cn/sign-up?aff=FfEj",
-      "domain": "downstream.jbbtoken.cn",
-      "tags": [
-        "GPT"
-      ],
-      "note": "进群给2刀；倍率：kiro 0.2x，gpt 0.1x，ccmax 0.5x",
-      "added_date": "2026-07-28"
-    },
-    {
-      "index": 38,
-      "name": "启悟流",
-      "url": "https://756777.xyz/register?aff=3R885475B5SZ",
-      "domain": "756777.xyz",
-      "tags": [],
-      "note": "注册加群领50刀体验卡，充值比例1：10，最低0.049倍率；邀请好友注册并充值满10元，双方各领66刀体验卡；充值100元可获888刀体验卡。",
-      "added_date": "2026-07-28"
-    },
-    {
-      "index": 39,
-      "name": "中专大王",
-      "url": "http://www.xn--ohq4b780ces0a.xyz/sign-up?aff=aqhj",
-      "domain": "xn--ohq4b780ces0a.xyz",
-      "tags": [
-        "签到",
-        "GPT"
-      ],
-      "note": "进群领1刀，每天可签到，GPT 0.02x。",
-      "added_date": "2026-07-28"
-    },
-    {
-      "index": 40,
-      "name": "CHH",
-      "url": "https://api.chhlink.xyz/register?aff=4UFN5ZCRNDKV",
-      "domain": "api.chhlink.xyz",
-      "tags": [],
-      "note": "进群领50刀。",
-      "added_date": "2026-07-28"
-    },
-    {
-      "index": 41,
-      "name": "gorouter",
-      "url": "https://gorouter.app/sign-up?aff=GvWs",
-      "domain": "gorouter.app",
-      "tags": [
-        "注册赠送",
-        "Claude"
-      ],
-      "note": "需要使用 GitHub 注册，注册赠送70刀，可使用 Claude。",
-      "added_date": "2026-07-29"
-    },
-    {
-      "index": 42,
-      "name": "modelport",
-      "url": "https://modelport.link/register?aff=KXEDZYFPJTH6",
-      "domain": "modelport.link",
-      "tags": [
-        "GPT"
-      ],
-      "note": "进群联系管理员可领取官倍 ¥3 站内体验额度，GPT 0.1x。",
-      "added_date": "2026-07-30"
-    },
-    {
-      "index": 43,
-      "name": "JuCodex",
-      "url": "https://jucodex.com/register?aff=6PXc",
-      "domain": "jucodex.com",
-      "tags": [
-        "注册赠送",
-        "GPT",
-        "Codex"
-      ],
-      "note": "注册赠送3刀，GPT 0.05x。",
-      "added_date": "2026-07-30"
-    },
-    {
-      "index": 44,
-      "name": "NexaRelay",
-      "url": "https://api.nexarelay.com/register?aff=RVTTQ4NBGE6X",
-      "domain": "api.nexarelay.com",
-      "tags": [
-        "注册赠送"
-      ],
-      "note": "注册赠送3刀，0.2x 倍率，相当于15刀额度。",
-      "added_date": "2026-07-30"
-    },
-    {
-      "index": 45,
-      "name": "云核",
-      "url": "https://api.yunhe.one/sign-up?aff=fPZa",
-      "domain": "api.yunhe.one",
-      "tags": [],
-      "note": "注册送4刀，试营业plus 0.08倍率",
-      "added_date": "2026-08-05"
-    },
-    {
-      "index": 46,
-      "name": "Orbelis",
-      "url": "https://nova.vcrauo.com/sign-up?aff=qhik",
-      "domain": "nova.vcrauo.com",
-      "tags": [
-        "签到",
-        "注册赠送",
-        "DeepSeek",
-        "Gemini",
-        "GLM"
-      ],
-      "note": "支持 QQ 邮箱、GitHub 注册；Plus、Grok 特惠模型 0.04×，Plus 高速模型 0.08×；通过邀请码注册赠送 1 美元，进群或 Telegram 再领 1 美元，每日签到赠送 0.2 美元；DeepSeek 和 GLM 5.2 免费，另支持 Gemini。",
-      "added_date": "2026-08-06"
-    },
-    {
-      "index": 47,
-      "name": "卡皮巴拉 API",
-      "url": "https://kapibala.asia/sign-up?aff=pEQ6",
-      "domain": "kapibala.asia",
-      "tags": [
-        "GPT"
-      ],
-      "note": "邀请码注册 22 刀，1 倍率",
-      "added_date": "2026-08-10"
-    },
-    {
-      "index": 48,
-      "name": "tabitoken",
-      "url": "https://tabitoken.com/sign-up?aff=ySIl",
-      "domain": "tabitoken.com",
-      "tags": [
-        "注册赠送",
-        "邀请"
-      ],
-      "note": "实测注册赠送120刀，仅有CC模型，没有GPT；倍率1X；邀请1人奖励20刀。",
-      "added_date": "2026-08-11"
-    },
-    {
-      "index": 49,
-      "name": "straitapi",
-      "url": "https://straitapi.com/sign-up?aff=WU5M",
-      "domain": "straitapi.com",
-      "tags": [
-        "Claude",
-        "GPT"
-      ],
-      "note": "注册即到账 $2：通过邀请链接 + QQ邮箱注册，双方立刻各得 $2 额度！（⚠️必须使用QQ邮箱） 首充无门槛送 $3：充值 1 元也算首充！立得 $3 美金调用额度。 0.08X GPT 0.15X CLAUDE",
-      "added_date": "2026-08-16"
-    },
-    {
-      "index": 50,
-      "name": "ai.alsl.xyz",
-      "url": "https://ai.alsl.xyz/register?aff=GP6NPUZHHEW8",
-      "domain": "ai.alsl.xyz",
-      "tags": [
-        "GPT"
-      ],
-      "note": "注册送10刀新人体验gpt",
-      "added_date": "2026-08-17"
-    },
-    {
-      "index": 51,
-      "name": "sudoflow",
-      "url": "https://sudoflow.top/sign-up?aff=WLW8",
-      "domain": "sudoflow.top",
-      "tags": [
-        "GPT"
-      ],
-      "note": "AFF：https://sudoflow.top/sign-up?aff=WLW8 注册：QQ邮箱注册 倍率：0.065x的gpt 邀请：注册送7 刀",
-      "added_date": "2026-08-19"
-    },
-    {
-      "index": 52,
-      "name": "New API",
-      "url": "https://xxs.l.cd/sign-up?aff=RhO4",
-      "domain": "xxs.l.cd",
-      "tags": [
-        "注册赠送",
-        "DeepSeek"
-      ],
-      "note": "注册送 50，只有 DeepSeek 可用",
-      "added_date": "2026-09-01"
-    },
-    {
-      "index": 53,
-      "name": "aotera",
-      "url": "https://aotera.cc/sign-up?aff=gC8q",
-      "domain": "aotera.cc",
-      "tags": [
-        "签到",
-        "GPT"
-      ],
-      "note": "邮箱注册 大额签到站，第一天送6，0.1倍率GPT，相当60刀。签到在个人资料",
-      "added_date": "2026-10-09"
-    },
-    {
-      "index": 54,
-      "name": "axoai",
-      "url": "https://axoai.cc/sign-up?aff=TzNK",
-      "domain": "axoai.cc",
-      "tags": [
-        "注册赠送",
-        "需加群",
-        "GPT",
-        "低倍率"
-      ],
-      "note": "注册送 2 刀，加群 149635520 再送 3 刀，GPT 最低 0.05 倍率，相当于 100 刀。",
-      "added_date": "2026-11-14"
-    },
-    {
-      "index": 55,
-      "name": "星驰API公益站",
-      "url": "https://t.me/xingchi66bot?start=inv_1751327121",
-      "domain": "t.me",
-      "tags": [
-        "公益",
-        "需加群",
-        "GPT"
-      ],
-      "note": "TG 进群领 1000 刀兑换码，GPT 0.5X 倍率。",
-      "added_date": "2026-11-19"
     }
   ]
 }

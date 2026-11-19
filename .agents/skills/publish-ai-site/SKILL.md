@@ -100,3 +100,21 @@ note cannot be determined.
 Never run `git pull`, `git rebase`, `git push --force`, or resolve a Git
 conflict automatically. A rejected push leaves its local commit intact for
 manual resolution.
+
+## Static website maintenance
+
+- The public website is https://bubblevv.github.io/ai-api-gongyi-nav/ and is
+  deployed by GitHub Pages from the root of `main`.
+- The workbook remains the source of truth. `tools/generate_site.py` renders
+  `tools/site_template.html` into the three versioned HTML pages and exports.
+  Do not edit the generated HTML directly.
+- Sort dated entries by date descending, breaking ties with ID descending.
+  Undated historical entries stay last in original ID order; never invent dates.
+- Keep all listings and referral URLs in static HTML so they work without
+  JavaScript. Search and tag filters enhance that existing content.
+- Listing-only releases use the allowlist above. A user-requested website
+  redesign may also commit its explicitly changed generator, template, tests,
+  and maintenance documentation after validation; leave unrelated files alone.
+- After pushing, check GitHub Pages build status and fetch the public HTML to
+  verify the deployed content. Do not claim search-engine indexing or rankings.
+- See `docs/site-publishing.md` for the maintenance and deployment checklist.
