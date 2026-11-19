@@ -112,6 +112,12 @@ manual resolution.
   Undated historical entries stay last in original ID order; never invent dates.
 - Keep all listings and referral URLs in static HTML so they work without
   JavaScript. Search and tag filters enhance that existing content.
+- Use exactly `注册链接` for public registration buttons, accessible labels,
+  Markdown link labels, and link-column headings. Do not label them `推广链接`,
+  `专属链接`, or `AFF链接`. Do not print separate site URLs/domains on cards or
+  share covers, or repeat raw registration URLs in notes. Preserve each full
+  referral URL in the link destination, including all invitation parameters,
+  and retain a brief, neutral invitation-reward disclosure in the footer.
 - Listing-only releases use the allowlist above. A user-requested website
   redesign may also commit its explicitly changed generator, template, tests,
   and maintenance documentation after validation; leave unrelated files alone.

@@ -97,10 +97,6 @@ class Site:
     def search_text(self) -> str:
         return " ".join([self.name, self.domain, self.note, self.added_date, *self.tags]).lower()
 
-    @property
-    def is_telegram(self) -> bool:
-        return urlparse(self.url).hostname == "t.me"
-
 
 def text(value: object) -> str:
     return "" if value is None else str(value).strip()
@@ -203,7 +199,7 @@ def write_cover(title: str, sites: list[Site]) -> None:
         draw.rounded_rectangle((col_x, y, col_x + 320, y + 64), radius=8, fill="#ffffff", outline="#e6e0f1", width=2)
         draw.rectangle((col_x, y, col_x + 7, y + 64), fill="#7d56d3")
         draw.text((col_x + 20, y + 10), site.name[:15], fill="#211936", font=card_font)
-        draw.text((col_x + 20, y + 38), site.domain[:26], fill="#625976", font=small_font)
+        draw.text((col_x + 20, y + 38), site.added_date or " / ".join(site.tags[:2]), fill="#625976", font=small_font)
 
     image.save(OUTPUTS["cover"], optimize=True)
 
@@ -211,7 +207,7 @@ def write_cover(title: str, sites: list[Site]) -> None:
 def write_csv(sites: list[Site]) -> None:
     with OUTPUTS["csv"].open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle)
-        writer.writerow(["序号", "站点", "AFF链接", "标签", "备注", "添加日期"])
+        writer.writerow(["序号", "站点", "注册链接", "标签", "备注", "添加日期"])
         for site in sites:
             writer.writerow([site.index, site.name, site.url, ";".join(site.tags), site.note, site.added_date])
 
@@ -241,7 +237,7 @@ def write_json(title: str, subtitle: str, updated: str, sites: list[Site]) -> No
 
 
 def markdown_link(site: Site) -> str:
-    return f"[{site.name}]({site.url})"
+    return f"[注册链接]({site.url})"
 
 
 def write_markdown(title: str, subtitle: str, updated: str, sites: list[Site]) -> str:
@@ -256,7 +252,7 @@ def write_markdown(title: str, subtitle: str, updated: str, sites: list[Site]) -
         "",
         "使用前请自行确认额度、倍率、模型可用性和注册状态；不要上传隐私数据、密钥或敏感文件。本站只做导航收录，不对任何第三方站点的服务质量、稳定性或数据安全负责。",
         "",
-        "| 序号 | 站点 | 专属链接 | 标签 | 备注 | 添加日期 |",
+        "| 序号 | 站点 | 注册链接 | 标签 | 备注 | 添加日期 |",
         "| --- | --- | --- | --- | --- | --- |",
     ]
     for site in sites:
@@ -277,19 +273,17 @@ def card_html(site: Site) -> str:
         f'\n            <time datetime="{esc(site.added_date)}">{esc(site.added_date)}</time>' if site.added_date else ""
     )
     tone = ("violet", "teal", "berry")[site.index % 3]
-    visit = "打开 Telegram" if site.is_telegram else "打开推广链接"
     return f"""
         <article class="site-card" id="site-{site.index}" data-search="{esc(site.search_text)}">
           <div class="card-head">
             <span class="site-mark {tone}" aria-hidden="true">{esc(site.name[0].upper())}</span>
             <div class="site-identity">
               <h4>{esc(site.name)}</h4>
-              <p class="domain">{esc(site.domain)}</p>
             </div>
           </div>{tag_list}
           <p class="note">{esc(site.note)}</p>
           <div class="card-foot">{added_date}
-            <a class="visit" href="{esc(site.url)}" target="_blank" rel="sponsored noopener noreferrer" aria-label="{visit} · {esc(site.name)}">{visit} <span aria-hidden="true">↗</span></a>
+            <a class="visit" href="{esc(site.url)}" target="_blank" rel="sponsored noopener noreferrer" aria-label="注册链接 · {esc(site.name)}">注册链接 <span aria-hidden="true">↗</span></a>
           </div>
         </article>"""
 

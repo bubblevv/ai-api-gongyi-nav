@@ -116,6 +116,10 @@ class LoadSitesTests(unittest.TestCase):
             self.assertIn('&lt;img src=x onerror=alert(1)&gt;', content)
             self.assertNotIn('<img src=x', content)
             self.assertEqual(content.count('class="site-card"'), 2)
+            self.assertNotIn('class="domain"', content)
+            self.assertNotIn('推广链接', content)
+            self.assertNotIn('专属链接', content)
+            self.assertEqual(content.count('aria-label="注册链接 · '), 2)
             self.assertIn('property="og:image" content="' + generate_site.SITE_URL, content)
             raw_ld = re.search(r'<script type="application/ld\+json">(.*?)</script>', content).group(1)
             items = json.loads(raw_ld)['mainEntity']['itemListElement']
@@ -143,6 +147,9 @@ class LoadSitesTests(unittest.TestCase):
 
         self.assertIn("JianZhiLe", content)
         self.assertIn("添加日期", content)
+        self.assertIn("| 站点 | 注册链接 |", content)
+        self.assertIn("[注册链接](" + site.url + ")", content)
+        self.assertNotIn("专属链接", content)
         self.assertNotIn("## 文件", content)
         self.assertNotIn("`index.html`", content)
         self.assertNotIn("tools/generate_site.py", content)
