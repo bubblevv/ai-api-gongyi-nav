@@ -12,6 +12,8 @@ from urllib.parse import urlparse
 from openpyxl import load_workbook
 from PIL import Image, ImageDraw, ImageFont
 
+from referral import has_referral_signal
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "ai-api-sites-table.xlsx"
@@ -71,7 +73,6 @@ KEYWORDS = [
 ]
 
 FILTER_TAGS = ["公益", "Claude", "GPT", "DeepSeek", "生图", "稳定", "注册赠送", "签到"]
-AFF_SIGNALS = ("aff=", "/invite/", "invite=", "ref=")
 
 
 @dataclass(frozen=True)
@@ -141,7 +142,7 @@ def load_sites() -> tuple[str, str, list[Site]]:
         parsed = urlparse(url)
         if parsed.scheme not in {"http", "https"} or not parsed.netloc:
             raise ValueError(f"Invalid URL for {name}: {url}")
-        if not any(signal in url for signal in AFF_SIGNALS):
+        if not has_referral_signal(url):
             raise ValueError(f"Referral signal missing for {name}: {url}")
         sites.append(
             Site(

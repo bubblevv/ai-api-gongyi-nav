@@ -12,7 +12,10 @@ publication confirmation.
 ## Required Input
 
 Require a site name and an `http` or `https` referral URL with one of `aff=`,
-`ref=`, `invite=`, or `/invite/`. Prefer this shape:
+`ref=`, `invite=`, or `/invite/`. A Telegram bot deep link on `t.me` with a
+`start=inv_` payload (for example `https://t.me/examplebot?start=inv_123456`)
+is also accepted when the promotion is claimed by joining the Telegram group.
+Prefer this shape:
 
 ```text
 站点：星河 API

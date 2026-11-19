@@ -13,11 +13,12 @@ from urllib.parse import urlparse
 
 from openpyxl import load_workbook
 
+from referral import has_referral_signal
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_HEADERS = ("序号", "站点", "链接", "标签", "备注", "添加日期")
 URL_PATTERN = re.compile(r"https?://[^\s<>\"']+", re.IGNORECASE)
-REFERRAL_SIGNALS = ("aff=", "ref=", "invite=", "/invite/")
 KNOWN_TAGS = (
     "公益",
     "签到",
@@ -124,8 +125,9 @@ def validate_url(url: str) -> None:
     parsed = urlparse(url)
     if parsed.scheme not in {"http", "https"} or not parsed.netloc:
         raise ValueError("URL must be a valid http or https URL")
-    if not any(signal in url.lower() for signal in REFERRAL_SIGNALS):
-        raise ValueError("referral signal is required in the URL")
+    if has_referral_signal(url):
+        return
+    raise ValueError("referral signal is required in the URL")
 
 
 def parse_site_copy(copy_text: str, added_date: str) -> ParsedSite:

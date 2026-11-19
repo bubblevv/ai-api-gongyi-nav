@@ -43,6 +43,28 @@ class ParseCopyTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "referral"):
             publish_site.parse_site_copy("站点：星河\nhttps://api.example.com/register", added_date="2026-07-16")
 
+    def test_parse_accepts_telegram_bot_invite_link(self) -> None:
+        copy_text = """站点：星驰API公益站
+链接：https://t.me/xingchi66bot?start=inv_1751327121
+标签：公益;需加群;GPT
+备注：TG 进群领 1000 刀兑换码，GPT 0.5X 倍率
+"""
+
+        site = publish_site.parse_site_copy(copy_text, added_date="2026-11-19")
+
+        self.assertEqual(site.url, "https://t.me/xingchi66bot?start=inv_1751327121")
+        self.assertEqual(site.tags, ("公益", "需加群", "GPT"))
+
+    def test_parse_rejects_telegram_link_without_bot_invite(self) -> None:
+        with self.assertRaisesRegex(ValueError, "referral"):
+            publish_site.parse_site_copy("站点：星河\nhttps://t.me/xingchi66bot", added_date="2026-11-19")
+
+    def test_parse_rejects_bot_invite_on_non_telegram_host(self) -> None:
+        with self.assertRaisesRegex(ValueError, "referral"):
+            publish_site.parse_site_copy(
+                "站点：星河\nhttps://example.com/bot?start=inv_1751327121", added_date="2026-11-19"
+            )
+
     def test_parse_rejects_missing_name(self) -> None:
         with self.assertRaisesRegex(ValueError, "name"):
             publish_site.parse_site_copy("https://api.example.com/register?aff=abc", added_date="2026-07-16")
