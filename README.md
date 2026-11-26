@@ -12,6 +12,7 @@
 
 | 序号 | 站点 | 注册链接 | 标签 | 备注 | 添加日期 |
 | --- | --- | --- | --- | --- | --- |
+| 56 | APITokens Market | [注册链接](https://v1.apitokens.market) | Groq低延迟; 全模型 | New-API 聚合网关，Groq 推理节点低至 ~240ms + OpenRouter 全系列 Claude/GPT/Gemini，支持自助充值。 | 2026-11-26 |
 | 55 | 星驰API公益站 | [注册链接](https://t.me/xingchi66bot?start=inv_1751327121) | 公益; 需加群; GPT | TG 进群领 1000 刀兑换码，GPT 0.5X 倍率。 | 2026-11-19 |
 | 54 | axoai | [注册链接](https://axoai.cc/sign-up?aff=TzNK) | 注册赠送; 需加群; GPT; 低倍率 | 注册送 2 刀，加群 149635520 再送 3 刀，GPT 最低 0.05 倍率，相当于 100 刀。 | 2026-11-14 |
 | 53 | aotera | [注册链接](https://aotera.cc/sign-up?aff=gC8q) | 签到; GPT | 邮箱注册 大额签到站，第一天送6，0.1倍率GPT，相当60刀。签到在个人资料 | 2026-10-09 |
