@@ -1,7 +1,7 @@
 {
   "title": "AI API 公益站导航",
   "description": "收录 GPT、Claude、DeepSeek、Gemini、GLM、MiniMax、Codex、New API 等模型接口入口，适合编程、酒馆、龙虾和免费额度检索。",
-  "updated": "2026-11-19",
+  "updated": "2026-11-27",
   "keywords": [
     "ai api",
     "AI API",
@@ -43,6 +43,17 @@
     "酒馆 API"
   ],
   "sites": [
+    {
+      "index": 56,
+      "name": "duzhouai.ccwu.cc",
+      "url": "https://duzhouai.ccwu.cc/register?aff=TBHWFT28HN8C",
+      "domain": "duzhouai.ccwu.cc",
+      "tags": [
+        "GPT"
+      ],
+      "note": "注册5，GPT倍率0.1",
+      "added_date": "2026-11-27"
+    },
     {
       "index": 55,
       "name": "星驰API公益站",
